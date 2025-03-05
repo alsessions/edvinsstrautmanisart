@@ -1,0 +1,10 @@
+format: null
+handle: thumb
+height: 250
+interlace: none
+mode: crop
+name: Thumb
+position: center-center
+quality: null
+upscale: true
+width: 250

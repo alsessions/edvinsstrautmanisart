@@ -1,0 +1,139 @@
+{% include '/partials/_head.twig' %}
+
+<body class=" bg-gray-900">
+
+	{% include '/partials/_nav-dark.twig' %}
+
+	<main class="container mt-20 px-4 lg: mx-auto min-h-screen lg:grid lg:grid-cols-12 md:gap-20">
+
+		<section class=" py-2 lg:py-10  sm:col-span-4">
+
+			<h1 class="text-2xl  text-gray-200 mb-1">{{entry.title}}<br>
+			</h1>
+
+			<p class=" mb-4 sm:mb-12 text-gray-300  text-lg">
+				{% if entry.year|length %}
+				{{ entry.year }} | 
+				{% endif %}
+				ID#: {{ entry.id }}<br>
+				{% if entry.size|length %}
+					{{entry.size}}
+					inches |
+				{% endif %}
+				{% if entry.medium | length %}
+					{{ entry.medium }}
+				{% else %}
+					Acrylic on canvas
+				{% endif %}
+				{% for category in entry.category.all() %}
+					<p class="italic mt-1">
+						<a href="/work/{{ category.slug }}" class="text-gray-200 hover:text-gray-500 border-b border-dotted border-gray-50">{{ category.title }}</a>
+					</p>
+				
+				{% endfor %}
+				{% if currentUser and entry is defined %}
+					<p class="text-sm my-4">
+						<a href="{{ entry.cpEditUrl }}" class="text-red-400">Edit this entry</a>
+					</p>
+				{% endif %}
+			</p>
+
+		</section>
+
+		<section
+			class="py-6 lg:py-8 sm:col-span-8 mb-4">
+			<!-- BEGIN PAGINATION -->
+			{% set params = craft.entries.section('work').orderBy('title asc') %}
+
+			{# Get the prev/next elements #}
+			{% set prevEntry = entry.getPrev(params) %}
+			{% set nextEntry = entry.getNext(params) %}
+
+			{# And make sure to only output the links if the element exists #}
+			<div class="flex justify-between">
+				<div>
+					{% if prevEntry %}
+						<a href="{{ prevEntry.url }}" name="previous" class="text-gray-400 pb-2 outline-none text-2xl font-medium">
+
+							&larr;
+						</a>
+
+					{% endif %}
+				</div>
+
+				<div>
+					{% if nextEntry %}
+						<a href="{{nextEntry.url}}" name="next" class="text-gray-400 pb-2 outline-none text-2xl font-medium ">&rarr;</a>
+
+					{% endif %}
+				</div>
+
+			</div>
+
+			<!-- END PAGINATION -->
+			{% for image in entry.image.all() %}
+				{% set optimizedImages = entry.image.one().optimizedImages %}
+
+				<div id="lightgallery">
+					<a href="{% for myAsset in entry.image.all() %}{{ myAsset.url }}{% endfor %}">
+						<picture>
+
+							<source srcset="{{ optimizedImages.srcsetWebP() }}" sizes="100vw" type="image/webp"/>
+							
+
+							<img src="{{ optimizedImages.src() }}" 
+							srcset="{{ optimizedImages.srcset() }}" 
+							data-srcset="{{ optimizedImages.srcset() }}"
+							sizes="100vw" 
+							alt="{{ entry.title }}"
+							class="border border-gray-600 shadow-xl lazyload "/>
+
+						</picture>
+
+					</a>
+				</div>
+
+			{% endfor %}
+			<script type="text/javascript">
+				lightGallery(document.getElementById('lightgallery'),
+					{
+					mode: 'lg-fade',
+					download: false,
+					cssEasing: 'cubic-bezier(0.25, 0, 0.25, 1)'
+					});
+			</script>
+
+			<!-- BEGIN PAGINATION -->
+			{% set params = craft.entries.section('work').orderBy('title asc') %}
+
+			{# Get the prev/next elements #}
+			{% set prevEntry = entry.getPrev(params) %}
+			{% set nextEntry = entry.getNext(params) %}
+
+			{# And make sure to only output the links if the element exists #}
+			<div class="flex justify-between md:my-6">
+				<div>
+					{% if prevEntry %}
+						<a href="{{ prevEntry.url }}" name="previous" class="text-gray-400 pb-2 outline-none text-2xl font-medium">
+
+							&larr;
+						</a>
+
+					{% endif %}
+				</div>
+
+				<div>
+					{% if nextEntry %}
+						<a href="{{nextEntry.url}}" name="next" class="text-gray-400 pb-2 outline-none text-2xl font-medium ">&rarr;</a>
+
+					{% endif %}
+				</div>
+
+			</div>
+
+			<!-- END PAGINATION -->
+		</section>
+
+	</main>
+	{% include '/partials/_footer.twig' %}
+</body>

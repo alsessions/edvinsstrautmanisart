@@ -1,0 +1,50 @@
+defaultPlacement: end
+fieldLayouts:
+  1313c3ab-ac48-41de-a01d-9a300fd6f509:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: e27591a4-219b-4d25-b9ec-54f0af397f11 # Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: work
+name: Work
+siteSettings:
+  373e57fd-8b25-4bda-a891-5a8e39c00669: # Edvins Strautmanis Art
+    hasUrls: true
+    template: category.twig
+    uriFormat: 'work/{slug}'
+structure:
+  maxLevels: null
+  uid: a74c0955-07b6-496c-bc1e-8a4dc4459f10

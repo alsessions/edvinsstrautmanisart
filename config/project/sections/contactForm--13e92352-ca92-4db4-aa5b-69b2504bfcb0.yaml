@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: contactForm
+name: 'Contact Us'
+propagationMethod: all
+siteSettings:
+  373e57fd-8b25-4bda-a891-5a8e39c00669: # Edvins Strautmanis Art
+    enabledByDefault: true
+    hasUrls: true
+    template: contact
+    uriFormat: contact
+type: single

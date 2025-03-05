@@ -1,0 +1,27 @@
+{% include '/partials/_head.twig' %}
+
+<body>
+
+	{% include '/partials/_nav-dark.twig' %}
+	<main class="container  mx-auto min-h-screen">
+		<section class="content mx-auto my-12 px-4">
+			<h1 class="text-3xl mb-4 text-gray-800 font-light">{{ entry.title }}</h1>
+      <div class="grid md:grid-cols-12 gap-4">
+<div class="md:col-span-7">
+  {{ craft.freeform.form("siteContact").render() }}
+		
+        </div>
+<div class="md:col-span-5">
+  <p class="text-gray-700 mt-6">Unfortunately we are unable to do in person showings at this time.</p>
+  <div class="my-10">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1097.487665708307!2d-74.00117267074978!3d40.7235027150869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598bea49d8bf%3A0x7f9b447def3f2cd0!2sGreene%20St%2C%20New%20York%2C%20NY!5e1!3m2!1sen!2sus!4v1639015908702!5m2!1sen!2sus"  height="450" style="border:0;" allowfullscreen="" loading="lazy" class="w-full"></iframe>
+  </div>
+</div>
+</div>
+				</section>
+			</main>
+
+        {# PurgeCSS: bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2 btn btn-success #}
+
+      
+			{% include '/partials/_footer.twig' %}

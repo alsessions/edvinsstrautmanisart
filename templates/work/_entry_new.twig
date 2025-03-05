@@ -1,0 +1,74 @@
+{% include '/partials/_head.twig' %}
+
+<body>
+
+    {% include '/partials/_nav2.twig' %}
+
+    <main class="container max-w-6xl mx-auto min-h-screen">
+
+        <section
+            class="mx-auto my-12 px-4 col-span-8">
+
+
+     
+           <div>
+           
+           <h1 class="text-xl  text-gray-700 mb-1">{{entry.title}} - {{ entry.year }}</h1>
+         
+           <p class=" mb-6 text-gray-600  text-lg">{% if entry.size|length %}{{entry.size}} inches |{% endif %} {% if entry.medium | length %}	{{ entry.medium }} {% else %} Acrylic on canvas{% endif %}</p>
+
+           </div>
+
+
+                {% for image in entry.image.all() %}
+                    {% set optimizedImages = entry.image.one().optimizedImages %}
+                    <picture>
+                        <source srcset="{{ optimizedImages.srcsetWebP() }}" sizes="100vw" type="image/webp"/>
+                        <img src="{{ optimizedImages.src() }}" srcset="{{ optimizedImages.srcset() }}" sizes="100vw" alt="{{ entry.title }} image" class="bg-gray-300 py-2 px-2 border shadow shadow-md"/>
+                    </picture>
+                {% endfor %}
+
+                <!-- BEGIN PAGINATION -->
+                {% set params = craft.entries.section('work').orderBy('title asc') %}
+
+                {# Get the prev/next elements #}
+                {% set prevEntry = entry.getPrev(params) %}
+                {% set nextEntry = entry.getNext(params) %}
+
+                {# And make sure to only output the links if the element exists #}
+                <div class="flex justify-between pb-2 md:py-6">
+                    <div>
+                        {% if prevEntry %}
+                            <a href="{{ prevEntry.url }}" name="previous">
+                                <button class="text-gray-500 py-4 md:pr-10 outline-none font-medium">
+                                    
+                                        &larr;&nbsp;{{ prevEntry.title }}
+                                        </a>
+                                        </button>
+                                        
+                                        
+                                         {% endif %}
+                                        </div>
+                                     
+                                        
+                                        <div>
+                                         {% if nextEntry %}
+                                        <a href="{{nextEntry.url}}" name="next">
+                                        <button class="text-gray-500 py-4 md:pr-10 outline-none font-medium ">{{ nextEntry.title }}&nbsp;&rarr;</a> </button>
+                                
+                           {% endif %}
+                        </div>
+                       
+                    </div>
+
+                    <!-- END PAGINATION -->
+                </section>
+
+
+                <section class="prose prose-2xl max-w-none mx-auto my-12 px-4 col-span-4">
+                
+                <p>right side
+                </section>
+
+            </main>
+            {% include '/partials/_footer.twig' %}

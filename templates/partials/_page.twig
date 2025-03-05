@@ -1,0 +1,45 @@
+    {% include '/partials/_head.twig' %}
+
+    <body>
+
+    {% include '/partials/_nav2.twig' %}
+    <main class="container  max-w-6xl px-4 mx-auto min-h-screen pb-20">
+        <section class= "content mx-auto my-12 px-4">
+        <h1 class="text-3xl mb-6">{{ entry.title }}</h1>
+         
+       
+{% for block in entry.pageContent.all() %}
+	{% switch block.type %}
+
+		{% case "text" %}
+			{{ block.text }} {# Redactor #}
+
+		{% case "image" %}
+      
+
+	
+
+        {% set optimizedImages = block.image.one().optimizedImages %}
+    <picture>
+        <source srcset="{{ optimizedImages.srcsetWebP() }}" 
+                 sizes="100vw"
+                 type="image/webp" />
+        <img src="{{ optimizedImages.src() }}"
+             srcset="{{ optimizedImages.srcset() }}"
+             sizes="100vw"
+             class="my-12"
+             alt="Page image" />
+     </picture>
+		
+
+
+		{% default %}
+			...
+
+	{% endswitch %}
+{% endfor %}
+
+        </section>
+        </main>
+
+{% include '/partials/_footer.twig' %}

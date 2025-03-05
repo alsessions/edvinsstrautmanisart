@@ -1,0 +1,47 @@
+fieldLayouts:
+  f0d7ec16-9d30-4e02-b5ac-392fc825e967:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1b90fc58-6fb7-49aa-840c-ca336c59833a # Optimized Images
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fs: siteAssets
+handle: siteAssets
+hasUrls: true
+name: 'Site Assets'
+sortOrder: 0
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+url: //edvinsstrautmanisart.com/assets

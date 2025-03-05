@@ -1,0 +1,102 @@
+{% include '/partials/_head.twig' %}
+
+<body class="bg-gray-100">
+	{% include '/partials/_nav-dark.twig' %}
+	<!--
+	<div class="w-full bg-gray-400 flex items-center md:pt-10 md:pb-20"
+		style="background-image:linear-gradient(
+			      rgba(0, 0, 0, 0.5),
+			      rgba(0, 0, 0, 0.5)
+			    ),url('/assets/cesis_gallery_wide_2021-04-11-210928.jpg');background-size:cover;background-repeat:no-repeat;background-position:center center;">
+		<div class=" mx-auto  py-10 px-6 container  rounded">
+			<h1 class="text-2xl md:text-5xl mb-4 text-white">Selected Work</h1>
+			<h2 class="text-white  md:text-2xl leading-relaxed md:max-w-4xl">All of the work displayed is in our
+				private collection. Please
+				<a href="/contact"
+					class="text-gray-200 hover:text-gray-400 border-b-2 border-gray-200 hover:border-gray-400">contact
+					us</a>
+				for availability and pricing.
+			</h2>
+		</div>
+	</div>
+-->
+	<main class=" mx-auto container min-h-screen px-6 mb-20">
+		<section class="pt-10">
+			<h2 class="text-gray-500 text-xl md:text-3xl pt-10 mb-6 uppercase">Large Paintings</h2>
+			<div class="grid grid-cols-2 md:grid-cols-3 gap-10 mx-auto">
+			
+					{% set myEntryQuery = craft.entries()
+						.section('work')
+						.relatedTo('240') 
+						.limit(6)
+						.featured('true') %}
+					{% set entries = myEntryQuery.all() %}
+			
+				{% for entry in entries %}
+				<div>
+				{% set image = entry.image.one() %}
+				<a href=" {{ entry.url }}">
+					<img src="{{ image.optimizedImages.src() }}"
+						srcset="{{ image.optimizedImages.srcset() }}"
+						class="opacity-100 shadow-xl hover:opacity-70 hover:transition-opacity duration-500   border border-gray-500 rounded">
+				</a>
+				<div class="flex flex-wrap justify-between px-2">
+				<p class="mt-2 text-gray-500 italic">{{ entry.size }} inches</p>
+				<p class="mt-2 text-gray-500 italic">{{ entry.year }}</p>
+				</div>
+				</div>
+				{% endfor %}
+				
+			</div>
+			<p class="my-6 md:py-10 font-light uppercase  tracking-wider text-right">
+				<a href="/work/large"
+					class="text-gray-700 rounded-sm   hover:text-gray-900 py-2 px-3">All
+					Paintings</a>
+			</p>
+		</section>
+		<section class="pt-10">
+			<h2 class="text-gray-500 text-xl md:text-2xl pt-10 mb-4 uppercase">Medium Paintings</h2>
+			<div class="grid grid-cols-3 gap-6">
+				{# Create an entry query with the 'section' and 'limit' parameters #}
+				{% set myEntryQuery = craft.entries()
+					.section('work')
+					.relatedTo('696')
+					.limit(6) %}
+				{% set entries = myEntryQuery.all() %}
+				{# Display the entries #}
+				{% for entry in entries %}
+				{% set asset = entry.image.one() %}
+				<a href=" {{ entry.url }}"><img src="{{ asset.url ('bigThumb') }}"
+						class="opacity-100 shadow-xl hover:opacity-50 hover:transition-opacity duration-500   border border-gray-500 rounded"></a>
+				{% endfor %}
+			</div>
+			<p class="my-6 md:py-10 font-light uppercase  tracking-wider text-right">
+				<a href="/work/medium"
+					class="text-white rounded-sm bg-opacity-5 bg-gray-200 hover:bg-gray-900 py-2 px-3">All
+					Paintings</a>
+			</p>
+		</section>
+		<section class="pt-10">
+			<h2 class="text-gray-500 text-xl md:text-2xl pt-10 mb-4 uppercase">Small Paintings</h2>
+			<div class="grid grid-cols-4 gap-8">
+				{# Create an entry query with the 'section' and 'limit' parameters #}
+				{% set myEntryQuery = craft.entries()
+					.section('work')
+					.relatedTo('676')
+					.limit(8) %}
+				{% set entries = myEntryQuery.all() %}
+				{# Display the entries #}
+				{% for entry in entries %}
+				{% set asset = entry.image.one() %}
+				<a href=" {{ entry.url }}"><img src="{{ asset.url ('bigThumb') }}"></a>
+				{% endfor %}
+			</div>
+			<p class="my-6 md:py-10 font-light uppercase  tracking-wider text-right">
+				<a href="/work/small"
+					class="text-white rounded-sm bg-opacity-5 bg-gray-200 hover:bg-gray-900 py-2 px-3">All
+					Paintings</a>
+			</p>
+		</section>
+	</main>
+	{% include '/partials/_footer.twig' %}
+</body>

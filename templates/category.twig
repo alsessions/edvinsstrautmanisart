@@ -1,0 +1,73 @@
+{% include '/partials/_head.twig' %}
+
+<body class="bg-gray-900">
+
+	{% include '/partials/_nav-dark.twig' %}
+
+	<main class="container max-w-6xl px-4 mx-auto min-h-screen">
+		<section class="my-12">
+			<h1 class="text-gray-50 text-3xl md:text-4xl mb-4">{{ category.title }}</h1>
+			<!--
+			<h2 class="text-gray-50 mb-4">All of the work displayed is in our private collection. Please <a href="/contact" class="text-gray-200 hover:text-gray-400 border-b-2 border-gray-200 hover:border-gray-400">contact us</a> for availability and pricing.</h2>
+			-->
+			{% if category.description | length %}
+			<div class="max-w-none text-white prose prose-lg">
+				{{ category.description | markdown }}
+				</div>
+				{% endif %}
+			
+			
+	
+
+		</section>
+
+		<section class="grid grid-cols-2 lg:grid-cols-3 gap-8  mx-auto my-12">
+
+			{% set entries = craft.entries.relatedTo(category).limit(100).all() %}
+
+			{% for entry in entries %}
+				<div class="mb-6">
+
+					<h2 class="pt-4 text-xl">
+						<a href="{{ entry.url }}" class="text-gray-900 border-none">{{ entry.title }}</a>
+					</h2>
+
+					{% set optimizedImages = entry.image.one().optimizedImages %}
+					<picture>
+						<source srcset="{{ optimizedImages.srcsetWebP() }}" sizes="100vw" type="image/webp"/>
+						<a href="{{ entry.url }}">
+							<img src="{{ optimizedImages.src() }}" srcset="{{ optimizedImages.srcset() }}" sizes="100vw" alt="{{ entry.title }} image" class="lg:transform lg:hover:scale-95   lg:duration-200 bg-gray-100 border border-gray-600 rounded-sm shadow-md mt-2"/>
+						</a>
+					</picture>
+
+					<section class="flex flex-wrap justify-between px-1">
+						<p class="text-gray-400 pt-2">
+<!--
+							{% if entry.size|length %}
+								{{ entry.size }}
+								|
+							{% endif %}
+
+							{% if entry.medium | length %}
+								{{ entry.medium }}
+							{% else %}
+								Acrylic on canvas
+							{% endif %}
+						-->
+						{{ entry.title }}
+						</p>
+
+						<p class="text-gray-400 pt-2">
+							{% if entry.year | length %}
+								{{ entry.year }}
+							{% endif %}
+
+						</p>
+					</section>
+
+				</div>
+			{% endfor %}
+
+		</section>
+	</div>
+</body></main>{% include '/partials/_footer.twig' %}</body>

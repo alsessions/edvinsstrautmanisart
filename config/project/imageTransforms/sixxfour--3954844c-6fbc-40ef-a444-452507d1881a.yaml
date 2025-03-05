@@ -1,0 +1,10 @@
+format: null
+handle: sixxfour
+height: 400
+interlace: none
+mode: crop
+name: sixxfour
+position: center-center
+quality: 60
+upscale: true
+width: 600

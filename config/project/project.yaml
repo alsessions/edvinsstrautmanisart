@@ -1,0 +1,535 @@
+dateModified: 1741182196
+email:
+  fromEmail: studio@edvinsstrautmanisart.com
+  fromName: 'Edvins Strautmanis Art'
+  replyToEmail: null
+  template: null
+  transportSettings:
+    password: Zeyphr123!
+    username: studio@edvinsstrautmanisart.com
+  transportType: craft\mail\transportadapters\Gmail
+fs:
+  paintings:
+    hasUrls: true
+    name: Paintings
+    settings:
+      path: /var/www/edvinsstrautmanisart.com/web/assets/paintings
+    type: craft\fs\Local
+    url: '@webroot/assets/paintings'
+  siteAssets:
+    hasUrls: true
+    name: 'Site Assets'
+    settings:
+      path: /var/www/edvinsstrautmanisart.com/web/assets
+    type: craft\fs\Local
+    url: //edvinsstrautmanisart.com/assets
+meta:
+  __names__:
+    1b31ea90-ae44-49ed-8e11-953acd5449c8: Category # Category
+    1b90fc58-6fb7-49aa-840c-ca336c59833a: 'Optimized Images' # Optimized Images
+    3af3b2dd-a774-4ea1-9f92-c98cfaa3d1e6: Common # Common
+    04da194b-c150-46d1-8de8-211d6398d29d: Simple # Simple
+    6b1c07bc-2f79-41d4-8cfd-faf0a21382c4: Image # Image
+    7d4c7977-cd8d-4bda-92b3-cef519b1c389: Work # Work
+    10bf254c-f11e-41a7-bc5c-25794fd826cc: 'Edvins Strautmanis Art' # Edvins Strautmanis Art
+    11f6a896-fc06-4d68-92c6-27bef538e4a3: Pages # Pages
+    13e92352-ca92-4db4-aa5b-69b2504bfcb0: 'Contact Us' # Contact Us
+    38b23a9d-00da-4029-8b23-ad8a7db99391: 'Big Thumb' # Big Thumb
+    60ac3a96-fef0-43f2-b1d1-f7937dfacc75: Text # Text
+    66a55a9d-71ea-4c99-a19f-72fbba755e52: Work # Work
+    92b9648b-9d74-4877-b379-b885622d0a06: Thumb # Thumb
+    97c731cf-c3f7-4a80-ae6f-203982b035ed: 'Contact Us' # Contact Us
+    316e79be-3f1e-45b4-ad64-553353e5abc4: Notes # Notes
+    373e57fd-8b25-4bda-a891-5a8e39c00669: 'Edvins Strautmanis Art' # Edvins Strautmanis Art
+    411a2b2a-43f0-4f3e-9a3e-f7bcd29418e1: Catgories # Catgories
+    6682d502-8e26-4c8c-8d49-347ba76eeeeb: Home # Home
+    9983c9f1-f187-4b1c-b28d-84e91bc6627d: Work # Work
+    18252c25-8d55-4941-bc7b-71c03a3d0372: Size # Size
+    39111da2-ccb6-45d7-abae-c353a6e1b2c4: About # About
+    76286b7a-daf6-486e-9ab8-5a848a82d90e: Image # Image
+    83887eb1-4ce1-461b-a2d8-5b72d7cd8eb0: Home # Home
+    3954844c-6fbc-40ef-a444-452507d1881a: sixxfour # sixxfour
+    4930256a-a90d-47b7-8884-05151924bc2a: 'Public Schema' # Public Schema
+    a955b2d3-60ee-4dcb-8f3b-f1b3aef05893: 'Page Content' # Page Content
+    afd26d5c-5d99-4270-bbb1-300f0c9f8c8e: Year # Year
+    b3d7c48e-857b-4b01-b594-5334932d5fb9: Paintings # Paintings
+    b24a58d0-641a-49db-baf0-aa04cbcfbda8: Medium # Medium
+    cc5b8db8-d1b2-464b-ad1c-08e5aadd72d0: Work # Work
+    d1b4dfd7-357d-4c22-8833-c08cfd6ddabb: About # About
+    d32ee691-cade-4bed-ab28-97461af96d11: 'Site Assets' # Site Assets
+    dc4f5604-2387-421e-a11b-8035fd08f095: Medium(640w) # Medium(640w)
+    e00f1be3-1fff-49af-81ca-5e24f21f84de: 'Square Thumb' # Square Thumb
+    e95eb7a9-0dc9-4fbc-b127-96f956cbe14e: Image # Image
+    e943be92-d528-4d31-93c5-4e85d47cb76f: Featured # Featured
+    e27591a4-219b-4d25-b9ec-54f0af397f11: Description # Description
+    eba44438-976e-43a8-a4a9-28f86f22c6c2: Text # Text
+    ec6a5247-8cc6-4adf-ae21-d904992a802d: Pages # Pages
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  contact-form-honeypot:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      honeypotParam: secretStuff
+  cp-clearcache:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  expanded-singles:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  feed-me:
+    edition: standard
+    enabled: true
+    schemaVersion: 5.1.1
+  freeform:
+    edition: lite
+    enabled: true
+    licenseKey: 2PE2V0QK49YU0LRWE0WO2JUR
+    schemaVersion: 5.4.2
+    settings:
+      alertNotificationRecipients: null
+      allowDashesInFieldHandles: false
+      allowFileTemplateEdit: true
+      autoScroll: '1'
+      autoScrollToErrors: '1'
+      badgeType: all
+      blockedEmails: ''
+      blockedEmailsError: 'Invalid Email Address'
+      blockedIpAddresses: ''
+      blockedKeywords: ''
+      blockedKeywordsError: 'Invalid Entry Data'
+      bypassSpamCheckOnLoggedInUsers: ''
+      clientDigestFrequency: 1
+      clientDigestRecipients: null
+      defaultFromEmail: '{{ craft.app.projectConfig.get(''email.fromEmail'') }}'
+      defaultFromName: '{{ craft.app.projectConfig.get(''email.fromName'') }}'
+      defaultView: dashboard
+      defaults:
+        __assoc__:
+          -
+            - previewHtml
+            - true
+          -
+            - twigInHtml
+            - true
+          -
+            - twigIsolation
+            - true
+          -
+            - includeSampleTemplates
+            - true
+          -
+            - notifications
+            -
+              __assoc__:
+                -
+                  - admin
+                  -
+                    __assoc__:
+                      -
+                        - template
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                -
+                  - conditional
+                  -
+                    __assoc__:
+                      -
+                        - template
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                -
+                  - userSelect
+                  -
+                    __assoc__:
+                      -
+                        - template
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                -
+                  - emailField
+                  -
+                    __assoc__:
+                      -
+                        - template
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+          -
+            - settings
+            -
+              __assoc__:
+                -
+                  - general
+                  -
+                    __assoc__:
+                      -
+                        - formType
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                      -
+                        - submissionTitle
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - '{{ dateCreated|date("Y-m-d H:i:s") }}'
+                      -
+                        - formattingTemplate
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - basic-light/index.twig
+                -
+                  - dataStorage
+                  -
+                    __assoc__:
+                      -
+                        - storeData
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - true
+                      -
+                        - defaultStatus
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - 2
+                      -
+                        - collectIp
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - true
+                -
+                  - processing
+                  -
+                    __assoc__:
+                      -
+                        - ajax
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - true
+                      -
+                        - showIndicator
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - true
+                      -
+                        - showText
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - true
+                      -
+                        - processingText
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - Processing...
+                -
+                  - successAndErrors
+                  -
+                    __assoc__:
+                      -
+                        - successBehavior
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - reload
+                      -
+                        - returnUrl
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                      -
+                        - successTemplate
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                      -
+                        - successMessage
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - 'Form has been submitted successfully!'
+                      -
+                        - errorMessage
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - 'Sorry, there was an error submitting the form. Please try again.'
+                -
+                  - limits
+                  -
+                    __assoc__:
+                      -
+                        - duplicateCheck
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - no_limit
+      digestFrequency: 1
+      digestOnlyOnProduction: false
+      digestRecipients: null
+      displayFeed: true
+      emailTemplateDefault: database
+      emailTemplateDirectory: null
+      emailTemplateStorageType: files_database
+      exportHandlesAsNames: false
+      exportLabels: false
+      fillWithGet: ''
+      footerScripts: false
+      formFieldShowOnlyAllowedForms: ''
+      formSubmitDisable: '1'
+      formSubmitExpiration: ''
+      formTemplateDirectory: null
+      formattingTemplate: tailwind-3/index.twig
+      loggingLevel: error
+      minimumSubmitTime: ''
+      pluginName: null
+      purgableSpamAgeInDays: '0'
+      purgableSubmissionAgeInDays: null
+      purgableUnfinalizedAssetAgeInMinutes: 180
+      purgeAssets: true
+      queuePriority: null
+      rememberPageSubmitOrder: '1'
+      removeNewlines: ''
+      renderFormHtmlInCpViews: '1'
+      saveFormSessionLimit: 10
+      saveFormTtl: 30
+      scriptInsertLocation: form
+      scriptInsertType: pointers
+      sessionContext: payload
+      sessionContextCount: '100'
+      sessionContextSecret: ''
+      sessionContextTimeToLiveMinutes: '180'
+      sessionEntryMaxCount: 50
+      sessionEntryTTL: 10800
+      showErrorsForBlockedEmails: ''
+      showErrorsForBlockedKeywords: ''
+      sitesEnabled: false
+      spamFolderEnabled: '1'
+      spamProtectionBehavior: simulate_success
+      submissionThrottlingCount: ''
+      submissionThrottlingTimeFrame: m
+      successTemplateDirectory: null
+      updateSearchIndexes: '1'
+      useQueueForEmailNotifications: false
+      useQueueForIntegrations: false
+  image-optimize:
+    edition: standard
+    enabled: true
+    licenseKey: 1QJED8T2H3B54LH7TV74QPEP
+    schemaVersion: 1.0.0
+    settings:
+      allowUpScaledImageVariants: false
+      assetVolumeSubFolders: true
+      autoSharpenScaledImages: true
+      capSilhouetteSvgSize: true
+      createColorPalette: false
+      createPlaceholderSilhouettes: false
+      imageTransformTypeSettings:
+        __assoc__:
+          -
+            - nystudio107\imageoptimizeimgix\imagetransforms\ImgixImageTransform
+            -
+              __assoc__:
+                -
+                  - domain
+                  - ''
+                -
+                  - apiKey
+                  - ''
+                -
+                  - securityToken
+                  - ''
+                -
+                  - unsharpMask
+                  - '20'
+          -
+            - nystudio107\imageoptimizesharp\imagetransforms\SharpImageTransform
+            -
+              __assoc__:
+                -
+                  - baseUrl
+                  - ''
+          -
+            - nystudio107\imageoptimizethumbor\imagetransforms\ThumborImageTransform
+            -
+              __assoc__:
+                -
+                  - baseUrl
+                  - ''
+                -
+                  - securityKey
+                  - ''
+      lowerQualityRetinaImageVariants: true
+      sharpenScaledImagePercentage: 50
+      transformClass: nystudio107\imageoptimize\imagetransforms\CraftImageTransform
+  seomatic:
+    edition: standard
+    enabled: true
+    licenseKey: 277YHPMN3B31SN7Q1BCJFQER
+    schemaVersion: 3.0.12
+    settings:
+      addHrefLang: true
+      addPaginatedHreflang: true
+      addXDefaultHrefLang: true
+      alwaysIncludeCanonicalUrls: false
+      cpTitlePrefix: '⚙ '
+      cspNonce: ''
+      cspScriptSrcPolicies:
+        -
+          __assoc__:
+            -
+              - policy
+              - '''self'''
+      devModeCpTitlePrefix: ''
+      devModeTitlePrefix: ''
+      displayAnalysisSidebar: true
+      displayPreviewSidebar: true
+      enableJsonLdEndpoint: false
+      enableMetaContainerEndpoint: false
+      enableSeoFileLinkEndpoint: false
+      environment: live
+      excludeNonCanonicalUrls: false
+      generatorEnabled: false
+      headersEnabled: true
+      includeHomepageInBreadcrumbs: true
+      lowercaseCanonicalUrl: true
+      manuallySetEnvironment: false
+      maxDescriptionLength: 155
+      maxTitleLength: 70
+      metaCacheDuration: 0
+      pluginName: SEO
+      regenerateSitemapsAutomatically: true
+      renderEnabled: true
+      separatorChar: '|'
+      sidebarDisplayPreviewTypes:
+        - google
+        - facebook
+      siteGroupsSeparate: '1'
+      siteUrlOverride: ''
+      sitemapsEnabled: true
+      socialMediaPreviewTarget: true
+      submitSitemaps: true
+      truncateDescriptionTags: '1'
+      truncateTitleTags: '1'
+  sidebar-admin-links:
+    edition: standard
+    enabled: false
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: 'Edvins Strautmanis Art'
+  retryDuration: null
+  schemaVersion: 4.5.3.0
+  timeZone: America/New_York
+users:
+  allowPublicRegistration: false
+  deactivateByDefault: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

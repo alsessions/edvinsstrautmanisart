@@ -1,0 +1,256 @@
+{% include '/partials/_head.twig' %}
+
+<body>
+
+	{% include '/partials/_nav-dark.twig' %}
+	<main class="container  max-w-7xl px-4 mx-auto">
+		<section class="prose prose-lg prose-headings:font-normal prose-headings:text-gray-400 max-w-none mx-auto">
+			<h1 class="mt-20">{{ entry.title }}</h1>
+
+			<div class="grid md:grid-cols-2 gap-12 prose prose-lg max-w-none">
+				{% for block in entry.pageContent.all() %}
+					<div>
+						{% switch block.type %}
+
+							{% case "text" %}
+								{{ block.text }}
+								{# Redactor #}
+							</div>
+							<div>
+
+								{% case "image" %}
+
+									{% set optimizedImages = block.image.one().optimizedImages %}
+									<picture>
+										<source srcset="{{ optimizedImages.srcsetWebP() }}" sizes="100vw" type="image/webp"/>
+										<img src="{{ optimizedImages.src() }}" srcset="{{ optimizedImages.srcset() }}" sizes="100vw" class="my-4 p-6 rounded-md" alt="Page image"/>
+									</picture>
+
+								</div>
+							</div>
+
+							{% default %}
+							...
+
+						{% endswitch %}
+					{% endfor %}
+
+				</section>
+
+				<section class=" mt-12 prose prose-lg max-w-none">
+
+					<h2 class="text-gray-800 text-2xl my-10 font-light">Cesis Art Festival &mdash; 2019</h2>
+
+					<img src="/assets/cesis_gallery_wid-croppede.jpg" class="mb-4 w-full rounded">
+
+					<p>In July 2019,
+						<strong>The National Art Museum of
+							Latvia</strong>
+						organized the Close-Up Exhibition in
+						Cesis, Latvia.</p>
+					<p>This first-ever retrospective
+						of Edvins Strautmanis in his native country
+						showcases a scope of work never before
+						shown, and depicts the most significant and
+						creative period of the artists’ career</p>
+
+					<p>
+						<a href="/work/cesis" class="text-blue-600">View Gallery</a>
+					</p>
+
+				</section>
+				<div class="grid md:grid-cols-2 gap-12">
+					<section class="md:my-12 content">
+						<h2 class="text-gray-800 text-2xl mt-10 mb-2">Exhibitions &amp; Collections</h2>
+						<div class="tab w-full overflow-hidden border-t">
+							<input class="absolute opacity-0" id="tab-single-one" type="radio" name="tabs2">
+							<label class="block py-3 text-gray-600 text-lg leading-normal font-medium cursor-pointer" for="tab-single-one">Solo Exhibitions</label>
+							<div class="tab-content overflow-hidden  leading-normal pl-4">
+								<p>1996- Staller Center for the Arts, Stony Brook, NY</p>
+								<p>1994- Stephen Rosenburg Gallery, NYC</p>
+								<p>1994- Kunst-Museum, Ahlen, Germany</p>
+								<p>1992- Jahnhorst and Preuss, Berlin, Germany</p>
+								<p>1991- Stephen Rosenburg Gallery, NYC</p>
+								<p>1991- Galerie Metta Linde, Lubeck, Germany</p>
+								<p>1990- Stephen Rosenberg Gallery, NYC</p>
+								<p>1987- OK Harris Gallery, NYC</p>
+								<p>1987- Galerie Sylvia Menzel, Berlin, Germany</p>
+								<p>1987- Galerie Brigitta Jacob, Oldenburg, Germany</p>
+								<p>1987- United States Mission, Berlin, Germany</p>
+								<p>1986- John Guggenheim Gallery, Miami, Fl</p>
+								<p>1986- Benson gallery, Southampton, NY</p>
+								<p>1985- Bockley Gallery, Minneapolis, MN</p>
+								<p>1984- Reynold C. Kerr Gallery, NYC</p>
+								<p>1984- Jeremy Stone Gallery, San Francisco, CA</p>
+								<p>1983- The Grayson Gallery, Chicago, IL</p>
+								<p>1982- Allan Stone Gallery, NYC</p>
+								<p>1980- Allan Stone Gallery, NYC</p>
+								<p>1979- Samuel Stein Fine Arts, Chicago, IL</p>
+								<p>1979- Walter Kelly Gallery, Chicago, IL</p>
+								<p>1977- Allan Stone Gallery, NYC</p>
+								<p>1975- Allan Stone Gallery, NYC</p>
+								<p>1974- Isis Gallery, Notre Dame University, IN</p>
+								<p>1973- Walter Kelly Gallery, Chicago, IL</p>
+								<p>1973- LoGiudice Gallery, NYC</p>
+								<p>1970- LoGiudice Gallery, NYC</p>
+								<p>1965- University of Chicago, IL</p>
+							</div>
+						</div>
+						<div class="tab w-full overflow-hidden border-t">
+							<input class="absolute opacity-0" id="tab-single-two" type="radio" name="tabs2">
+							<label class="block py-3 text-gray-600 font-medium text-lg leading-normal cursor-pointer" for="tab-single-two">Group Exhibitions</label>
+							<div class="tab-content overflow-hidden  leading-normal pl-4">
+								<p>2002- Abstraction, Allan Stone Gallery, New York, NY</p>
+								<p>1997- One of A Kind, Rosenberg + Kaufman Gallery, New York, NY</p>
+								<p>1995- Rigas Galeriga, Riga, Latvia</p>
+								<p>1993- The Tenth Summer, Stephen Rosenberg Gallery, New York, NY</p>
+								<p>1993- Jahnhorst and Preuss, Berlin, Germany</p>
+								<p>1991- Paper Trail, Stephen Rosenberg Gallery, New York, NY</p>
+								<p>1990- The Art Studio, New York, NY</p>
+								<p>1989- Anita Shapolsky Gallery, New York, NY</p>
+								<p>1988- Noordkunst, Groningen Museum, Denmark</p>
+								<p>1987- Kouros Gallery, New York, NY</p>
+								<p>1986- Benton Gallery, Southampton, NY</p>
+								<p>1985- Five New York Expressionists, Newton Arts Center, Newton, MA</p>
+								<p>1985- Advanced Abstraction, Burke Gallery, New York, NY</p>
+								<p>1983- Swen Parson Gallery, Northern Illinois University, De Kalb, IL</p>
+								<p>1983-Stephen Rosenberg Gallery, New York, NY</p>
+								<p>1978- Abstract Expressionism and Its Disciples, Allan Stone Gallery, New York, NY</p>
+								<p>1976- Governors State University, Park Forest South, IL</p>
+								<p>1976- Dart Gallery, Chicago, IL</p>
+								<p>1974- Painting and Sculpture Today, Indianapolis Museum of Art, Indianapolis, IN</p>
+								<p>1974- Allan Stone Gallery, New York, NY</p>
+								<p>1970- Society for Contemporary Art, The Art Institute of Chicago, Chicago, IL</p>
+								<p>1968- Whitney Museum of American Art, New York, NY</p>
+								<p>1968- State Museum of Natural History and Art, Springfield, IL</p>
+								<p>1968- Five Abstractionists, Main Street Gallery, Chicago, IL</p>
+								<p>1968- Painting: Off the Wall, Des Moines Art Center, IA</p>
+								<p>1966- Noah Goldowsky Gallery, New York, NY</p>
+								<p>1965- Society for Contemporary Art, The Art Institute of Chicago, Chicago, IL</p>
+								<p>1964- Contemporary Latvian Painters, Herron Museum of Art, Indianapolis, IN</p>
+								<p>1964- 7’and Up, DePaul University, Chicago, IL</p>
+								<p>1964- Hyde Park Art Center, Chicago, IL</p>
+								<p>1962- 12 Chicago Artists, McCormick Place Gallery, Chicago, IL</p>
+							</div>
+						</div>
+						<div class="tab w-full overflow-hidden border-t">
+							<input class="absolute opacity-0" id="tab-single-three" type="radio" name="tabs2">
+							<label class="block py-3 text-gray-600 text-lg font-medium leading-normal cursor-pointer" for="tab-single-three">Permanent Collections</label>
+							<div class="tab-content overflow-hidden leading-normal pl-4">
+								<p>Chase Manhattan Bank, New York, NY</p>
+								<p>AT&T Company, New York, NY</p>
+								<p>HMH Publishing Company, Chicago, IL</p>
+								<p>Houstonic Museum of Art, Bridgeport, CT</p>
+								<p>Herbert F. Johnson Museum of Art, Ithaca, NY</p>
+								<p>Kunsthaus, Zurich, Switzerland</p>
+								<p>Latvian State Museum of Art, Riga, Latvia</p>
+								<p>The Sydney and Francis Lewis Foundation, VA</p>
+								<p>Minneapolis Institute of Arts, Minneapolis, MN</p>
+								<p>Newark Museum, Newark, NJ</p>
+								<p>Museum of Contemporary Art, Chicago, IL</p>
+								<p>Phoenix Museum of Art, Phoenix, AZ</p>
+								<p>Ringling Museum of Art, Sarasota, FL</p>
+								<p>St. Mary’s College of Art, MD</p>
+								<p>University Art Center, Rutgers State University, NJ</p>
+							</div>
+						</div>
+
+					</section>
+
+					<section class="md:my-12 content">
+						<h2 class="text-gray-800 text-2xl mt-10 mb-2">Bibliography</h2>
+						<div class="tab w-full overflow-hidden border-t">
+							<input class="absolute opacity-0" id="tab-single-four" type="radio" name="tabs2">
+							<label class="block py-3 text-gray-600 text-lg font-medium leading-normal cursor-pointer" for="tab-single-four">Citations</label>
+							<div class="tab-content overflow-hidden  leading-normal pl-4">
+								<p class="">Edvins Strautmanis, Abstract Painter, 58.
+								<a href="https://www.nytimes.com/1992/08/08/obituaries/edvins-strautmanis-abstract-painter-58.html" class="text-blue-600 hover:underline">The New York Times</a>.</p>
+									
+									<p class="">Stony Brook University Catalog.
+								<a href="https://ir.stonybrook.edu/xmlui/bitstream/handle/11401/2930/Art_Piece_53.pdf?sequence=1" class="text-blue-600 hover:underline">SUNY Stony Brook [PDF]</a>.</p>
+									
+									<p class="">Nathan Manilow Sculpture Park Collection.<a href="http://www.publicartinchicago.com/nathan-manilow-sculpture-park-nmsp-collection-phoenix-by-edvins-strautmanis/" class="text-blue-600 hover:underline">Public Art in Chicago</a>.</p>
+									
+									<p class="">Cēsis Art Festival 2019.
+								<a href="https://arterritory.com/en/visual_arts/articles/24195-cesis_art_festival_2019_highlights/" class="text-blue-600 hover:underline">Art Territory</a>.</p>
+									
+									<p class="">Roberta Pancoast Smith on Edvins Strautmanis. <a href="https://www.artforum.com/print/reviews/197304/edvins-strautmanis-71501" class="text-blue-600 hover:underline">Art Forum</a>.</p>
+
+							</div>
+						</div>
+
+					</section>
+				</div>
+
+				<section class="my-12">
+					<h2 class="text-gray-800 text-2xl mt-4 mb-2">Video &amp; Other Media</h2>
+
+					<div class="flex flex-wrap -mx-2">
+						<div class="w-full md:w-1/2 px-2">
+							<h3 class="mb-2 text-gray-700 text-lg font-medium">Portrait of a Painter</h3>
+							<div class=" relative aspect-ratio-16/9 ">
+
+								<iframe src="https://www.youtube.com/embed/yL0sD5oXarA" frameborder="0" allow="accelerometer; autoplay;modestbranding=1; controls=0;encrypted-media; gyroscope; picture-in-picture; rel=0" allowfullscreen class="absolute left-0 top-0 w-full h-full object-cover"></iframe>
+
+							</div>
+							<p class="text-gray-700 p-2 leading-relaxed mt-2">
+								A narrated film by
+								<strong>Michel Auder</strong>
+								showing Strautmanis at work in his SOHO studio. Made in 1983 when Strautmanis was at the peak of his career the  brief narrated film includes a tour of the artist's SOHO loft.</p>
+						</div>
+
+						<div class="w-full md:w-1/2 px-2">
+							<h3 class="mb-2 text-gray-700 text-lg font-medium">Images/Art New York</h3>
+							<div class="relative aspect-ratio-16/9">
+								<iframe src="https://www.youtube.com/embed/L9Q23Ah6VrE" frameborder="0" allow="accelerometer; autoplay; modestbranding=1; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="absolute left-0 top-0 w-full h-full object-cover"></iframe>
+							</div>
+							<p class="text-gray-700 p-2 leading-relaxed  mt-2">
+								An extended interview, a tour of the artist's SOHO studio and unique footage of Strautmanis at work. Produced and Directed by
+								<strong>Bill Page</strong>
+								for
+								<strong>New York One</strong>.</p>
+						</div>
+
+						<div class="w-full md:w-1/2 px-2">
+							<h3 class="mb-2 text-gray-700 text-lg font-medium">SUNY Stony Brook - 1996</h3>
+							<div class="relative aspect-ratio-16/9">
+								<iframe src="https://www.youtube.com/embed/CO0lfNrzeyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="absolute left-0 top-0 w-full h-full object-cover"></iframe>
+							</div>
+							<p class="text-gray-700 p-2 leading-relaxed  mt-2">
+								An overview of Strautmanis' 1996 exhibition at the State University of New York, Stony Brook.</p>
+						</div>
+					</div>
+				</section>
+		
+			</main>
+			<script>
+				/* Optional Javascript to close the radio button version by clicking it again */
+var myRadios = document.getElementsByName('tabs2');
+var setCheck;
+var x = 0;
+for (x = 0; x < myRadios.length; x = x + 1)
+{
+
+myRadios[x].onclick = function ()
+{
+
+if (setCheck != this)
+{
+
+setCheck = this;
+
+}
+else
+{
+
+this.checked = false;
+setCheck = null;
+
+}
+
+};
+
+}
+			</script>
+
+			{% include '/partials/_footer.twig' %}

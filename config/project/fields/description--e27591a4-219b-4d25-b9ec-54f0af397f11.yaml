@@ -1,0 +1,23 @@
+columnSuffix: null
+contentColumnType: text
+fieldGroup: 411a2b2a-43f0-4f3e-9a3e-f7bcd29418e1 # Catgories
+handle: description
+instructions: ''
+name: Description
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  ckeConfig: 04da194b-c150-46d1-8de8-211d6398d29d # Simple
+  columnType: text
+  defaultTransform: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showUnpermittedFiles: ''
+  showUnpermittedVolumes: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

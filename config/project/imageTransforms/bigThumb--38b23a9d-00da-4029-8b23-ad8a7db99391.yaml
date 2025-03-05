@@ -1,0 +1,10 @@
+format: null
+handle: bigThumb
+height: 500
+interlace: none
+mode: crop
+name: 'Big Thumb'
+position: center-center
+quality: null
+upscale: true
+width: 500

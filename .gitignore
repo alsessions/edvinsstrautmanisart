@@ -1,0 +1,35 @@
+# Craft recommended .gitignore patterns
+/.env
+/.idea
+/vendor
+.DS_Store
+
+# Craft storage (may contain sensitive information)
+/storage/*
+!/storage/.gitkeep
+
+# Build files
+/node_modules
+/npm-debug.log
+yarn-error.log
+/yarn-debug.log
+
+# Database backups
+*.sql.zip
+*.sql
+*.sql.gz
+*.mysql
+*.mysql.gz
+*.mysqldump
+*.msql
+*.dump
+
+# Ignore all files and directories in web/assets
+/web/assets/*
+!/web/assets/.gitkeep
+
+# Craft backups
+/storage/backups/
+
+# Compiled CSS, JS
+/web/cpresources/

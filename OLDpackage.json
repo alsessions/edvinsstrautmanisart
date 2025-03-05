@@ -1,0 +1,12 @@
+{
+  "name": "Edvins Strautmanis",
+  "scripts": {
+    "watch": "npx tailwindcss -i ./src/css/tailwind.css -o ./web/css/styles.css --jit --purge './templates/**/*.twig' -w",
+    "build": "npx tailwindcss -i ./src/css/tailwind.css -o ./web/css/styles.css  --jit --purge './templates/**/*.twig' -m"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.3.4",
+    "@tailwindcss/typography": "^0.4.1",
+    "tailwindcss": "^2.2.19"
+  }
+}

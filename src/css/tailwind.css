@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  body {
+    @apply bg-white;
+  }
+
+  h1,h2 {
+    @apply text-gray-100 font-serif;
+  }
+
+  h3 {
+    @apply my-4 font-normal;
+  }
+
+  .btn-blue {
+    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+  }
+
+  .btn-white {
+    @apply py-3 px-5 bg-opacity-50 text-gray-200 text-lg font-semibold  hover:bg-opacity-50 tracking-wider uppercase rounded-sm;
+  }
+
+  .content p {
+    @apply text-lg md:text-xl  md:leading-relaxed mb-4 font-normal;
+  }
+
+  /* Tab content - closed */
+  .tab-content {
+    max-height: 0;
+    -webkit-transition: max-height 0.35s;
+    -o-transition: max-height 0.35s;
+    transition: max-height 0.35s;
+  }
+
+  .content .tab-content p {
+    @apply text-base my-2;
+  }
+  /* :checked - resize to full height */
+  .tab input:checked ~ .tab-content {
+    max-height: 150rem;
+  }
+  /* Label formatting when open */
+  .tab input:checked + label {
+    @apply   text-lg  bg-white text-black;
+
+  }
+  /* Icon */
+  .tab label::after {
+    float: right;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 1.25em;
+    height: 1.25em;
+    line-height: 1.25;
+    font-size: 1rem;
+    text-align: center;
+    -webkit-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+
+  /* Icon formatting - closed */
+  .tab input[type="checkbox"] + label::after {
+    content: "+";
+    font-weight: bold; /*.font-bold*/
+    border-width: 1px; /*.border*/
+    border-radius: 9999px; /*.rounded-full */
+    border-color: #b8c2cc; /*.border-grey*/
+  }
+  .tab input[type="radio"] + label::after {
+    content: "\25BE";
+    font-weight: bold; /*.font-bold*/
+    border-width: 1px; /*.border*/
+    border-radius: 9999px; /*.rounded-full */
+    border-color: #b8c2cc; /*.border-grey*/
+  }
+  /* Icon formatting - open */
+  .tab input[type="checkbox"]:checked + label::after {
+    transform: rotate(315deg);
+    background-color: #6574cd; /*.bg-indigo*/
+    color: #f8fafc; /*.text-grey-lightest*/
+  }
+  .tab input[type="radio"]:checked + label::after {
+    transform: rotateX(180deg);
+    background-color: #6574cd; /*.bg-indigo*/
+    color: #f8fafc; /*.text-grey-lightest*/
+  }
+
+  .aspect-ratio-none {
+    padding-bottom: 0;
+  }
+  .aspect-ratio-square {
+    padding-bottom: 100%;
+  }
+  .aspect-ratio-16\/9 {
+    padding-bottom: 56.25%;
+  }
+  .aspect-ratio-4\/3 {
+    padding-bottom: 75%;
+  }
+  .aspect-ratio-21\/9 {
+    padding-bottom: 42.86%;
+  }
+
+  input#secretStuff { display: none; }
+
+
+
+}
