@@ -1,13 +1,47 @@
-dateModified: 1741182196
+dateModified: 1741201785
+elementSources:
+  Solspace\Freeform\Elements\Submission:
+    -
+      defaultSort:
+        - title
+        - asc
+      disabled: false
+      key: '*'
+      tableAttributes:
+        - id
+        - status
+        - dateCreated
+        - form
+      type: native
+    -
+      heading: Forms
+      type: heading
+    -
+      defaultSort:
+        - title
+        - asc
+      disabled: false
+      key: 'form:1'
+      tableAttributes:
+        - id
+        - status
+        - dateCreated
+        - form
+        - 'field:2'
+        - 'field:1'
+      type: native
 email:
-  fromEmail: studio@edvinsstrautmanisart.com
+  fromEmail: info@edvinsstrautmanisart.com
   fromName: 'Edvins Strautmanis Art'
   replyToEmail: null
   template: null
   transportSettings:
-    password: Zeyphr123!
-    username: studio@edvinsstrautmanisart.com
-  transportType: craft\mail\transportadapters\Gmail
+    host: smtppro.zoho.com
+    password: en3Factah1Wedge!
+    port: '465'
+    useAuthentication: '1'
+    username: info@edvinsstrautmanisart.com
+  transportType: craft\mail\transportadapters\Smtp
 fs:
   paintings:
     hasUrls: true
