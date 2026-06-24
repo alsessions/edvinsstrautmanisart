@@ -1,4 +1,4 @@
-dateModified: 1741201785
+dateModified: 1782332240
 elementSources:
   Solspace\Freeform\Elements\Submission:
     -
@@ -120,12 +120,12 @@ plugins:
   feed-me:
     edition: standard
     enabled: true
-    schemaVersion: 5.1.1
+    schemaVersion: 5.14.0
   freeform:
     edition: lite
     enabled: true
     licenseKey: 2PE2V0QK49YU0LRWE0WO2JUR
-    schemaVersion: 5.4.2
+    schemaVersion: 5.15.1
     settings:
       alertNotificationRecipients: null
       allowDashesInFieldHandles: false
@@ -408,6 +408,7 @@ plugins:
       displayFeed: true
       emailTemplateDefault: database
       emailTemplateDirectory: null
+      emailTemplateMethod: global
       emailTemplateStorageType: files_database
       exportHandlesAsNames: false
       exportLabels: false
@@ -504,7 +505,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: 277YHPMN3B31SN7Q1BCJFQER
-    schemaVersion: 3.0.12
+    schemaVersion: 3.0.13
     settings:
       addHrefLang: true
       addPaginatedHreflang: true
@@ -558,7 +559,7 @@ system:
   live: true
   name: 'Edvins Strautmanis Art'
   retryDuration: null
-  schemaVersion: 4.5.3.0
+  schemaVersion: 4.17.0.3
   timeZone: America/New_York
 users:
   allowPublicRegistration: false
