@@ -1,4 +1,4 @@
-dateModified: 1782332240
+dateModified: 1782760495
 elementSources:
   Solspace\Freeform\Elements\Submission:
     -
@@ -61,13 +61,16 @@ meta:
   __names__:
     1b31ea90-ae44-49ed-8e11-953acd5449c8: Category # Category
     1b90fc58-6fb7-49aa-840c-ca336c59833a: 'Optimized Images' # Optimized Images
+    2f129d38-12e3-4dcd-a850-0a9be8a02b94: New # New
     3af3b2dd-a774-4ea1-9f92-c98cfaa3d1e6: Common # Common
     04da194b-c150-46d1-8de8-211d6398d29d: Simple # Simple
     6b1c07bc-2f79-41d4-8cfd-faf0a21382c4: Image # Image
     7d4c7977-cd8d-4bda-92b3-cef519b1c389: Work # Work
+    9e4a7cae-7f3f-4ee3-8d7b-2f6833d4d16f: 'Contact Form' # Contact Form
     10bf254c-f11e-41a7-bc5c-25794fd826cc: 'Edvins Strautmanis Art' # Edvins Strautmanis Art
     11f6a896-fc06-4d68-92c6-27bef538e4a3: Pages # Pages
     13e92352-ca92-4db4-aa5b-69b2504bfcb0: 'Contact Us' # Contact Us
+    16ebf092-cb35-4d3a-8e99-d7d441a12f71: New # New
     38b23a9d-00da-4029-8b23-ad8a7db99391: 'Big Thumb' # Big Thumb
     60ac3a96-fef0-43f2-b1d1-f7937dfacc75: Text # Text
     66a55a9d-71ea-4c99-a19f-72fbba755e52: Work # Work
@@ -86,6 +89,7 @@ meta:
     4930256a-a90d-47b7-8884-05151924bc2a: 'Public Schema' # Public Schema
     a955b2d3-60ee-4dcb-8f3b-f1b3aef05893: 'Page Content' # Page Content
     afd26d5c-5d99-4270-bbb1-300f0c9f8c8e: Year # Year
+    b09940e1-80ab-40e5-976c-98d465216d2e: New # New
     b3d7c48e-857b-4b01-b594-5334932d5fb9: Paintings # Paintings
     b24a58d0-641a-49db-baf0-aa04cbcfbda8: Medium # Medium
     cc5b8db8-d1b2-464b-ad1c-08e5aadd72d0: Work # Work
@@ -121,6 +125,358 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 5.14.0
+  formie:
+    edition: standard
+    enabled: true
+    licenseKey: WKOQD375H01U32VYSC9844X2
+    schemaVersion: 2.0.21
+    settings:
+      ajaxTimeout: 10
+      alertEmails: null
+      captchas:
+        __assoc__:
+          -
+            - akismet
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Akismet
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - akismet
+          -
+            - captchaEu
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\CaptchaEu
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      0:
+                        - handle
+                        - captchaEu
+                      3:
+                        - endPoint
+                        - 'https://www.captcha.eu'
+          -
+            - cleantalk
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\CleanTalk
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - cleantalk
+          -
+            - turnstile
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Turnstile
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      0:
+                        - handle
+                        - turnstile
+                      3:
+                        - scriptLoadingMethod
+                        - asyncDefer
+                      4:
+                        - theme
+                        - auto
+                      5:
+                        - size
+                        - normal
+                      6:
+                        - appearance
+                        - always
+          -
+            - duplicate
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Duplicate
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - duplicate
+          -
+            - friendlyCaptcha
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\FriendlyCaptcha
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      0:
+                        - handle
+                        - friendlyCaptcha
+                      3:
+                        - language
+                        - en
+                      4:
+                        - startMode
+                        - none
+          -
+            - hcaptcha
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Hcaptcha
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      0:
+                        - handle
+                        - hcaptcha
+                      3:
+                        - size
+                        - normal
+                      4:
+                        - theme
+                        - light
+                      5:
+                        - language
+                        - en
+                      6:
+                        - minScore
+                        - 0.5
+                      7:
+                        - scriptLoadingMethod
+                        - asyncDefer
+          -
+            - honeypot
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Honeypot
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - honeypot
+          -
+            - javascript
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Javascript
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - javascript
+          -
+            - OopSpam
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\OopSpam
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - OopSpam
+          -
+            - question
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Question
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - question
+          -
+            - recaptcha
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Recaptcha
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - recaptcha
+                      -
+                        - secretKey
+                        - 6LcTe-oqAAAAAF2AlcSdBi3USjkZgTig0fGCaxJG
+                      -
+                        - siteKey
+                        - 6LcTe-oqAAAAAAJT3ki3MSdSL4z5U19VE4uBump8
+                      -
+                        - type
+                        - v3
+                      -
+                        - size
+                        - normal
+                      -
+                        - theme
+                        - light
+                      -
+                        - badge
+                        - bottomright
+                      -
+                        - language
+                        - en
+                      -
+                        - minScore
+                        - 0.5
+                      -
+                        - scriptLoadingMethod
+                        - asyncDefer
+                      -
+                        - enterpriseType
+                        - score
+      defaultDateDisplayType: calendar
+      defaultDateTime: null
+      defaultDateValueOption: ''
+      defaultEmailTemplate: ''
+      defaultFileUploadVolume: ''
+      defaultFormTemplate: ''
+      defaultInstructionsPosition: verbb\formie\positions\AboveInput
+      defaultLabelPosition: verbb\formie\positions\AboveInput
+      defaultPage: forms
+      emptyValuePlaceholder: 'No response.'
+      enableBackSubmission: true
+      enableCsrfValidationForGuests: true
+      enableLargeFieldStorage: false
+      enableUnloadWarning: true
+      includeDraftElementUsage: false
+      includeRevisionElementUsage: false
+      maxIncompleteSubmissionAge: 30
+      maxSentNotificationsAge: 30
+      outputConsoleMessages: true
+      pdfPaperOrientation: portrait
+      pdfPaperSize: letter
+      pluginName: Formie
+      queuePriority: null
+      saveSpam: true
+      sendEmailAlerts: false
+      sentNotifications: true
+      setOnlyCurrentPagePayload: false
+      spamBehaviour: showSuccess
+      spamBehaviourMessage: ''
+      spamEmailNotifications: false
+      spamKeywords: ''
+      spamLimit: 500
+      useEmailTemplateForFieldVariables: false
+      useQueueForIntegrations: true
+      useQueueForNotifications: true
+      validateCustomTemplates: true
   freeform:
     edition: lite
     enabled: true

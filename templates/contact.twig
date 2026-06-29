@@ -11,6 +11,19 @@
   {{ craft.freeform.form("siteContact").render() }}
 		
         </div>
+
+        <div class="md:col-span-7">
+{# Create a form query with the 'handle' parameter #}
+{% set formQuery = craft.formie.forms()
+    .handle('contactForm') %}
+
+{# Fetch the Form #}
+{% set form = formQuery.one() %}
+
+{# Display their contents #}
+<p>{{ form.title }}</p>
+		
+        </div>
 <div class="md:col-span-5">
   <p class="text-gray-700 mt-6">Unfortunately we are unable to do in person showings at this time.</p>
   <div class="my-10">
