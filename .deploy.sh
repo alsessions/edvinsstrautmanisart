@@ -15,7 +15,11 @@ cd "$ROOT"
 echo "Deploying ${REMOTE}/${BRANCH} to ${ROOT}"
 
 git fetch "$REMOTE" "$BRANCH"
-git reset --hard "$REMOTE/$BRANCH"
+DEPLOY_COMMIT="$(git rev-parse FETCH_HEAD)"
+echo "Fetched ${BRANCH} at ${DEPLOY_COMMIT}"
+
+git reset --hard "$DEPLOY_COMMIT"
+echo "Working tree reset to $(git rev-parse --short HEAD)"
 
 composer install --no-dev --prefer-dist --optimize-autoloader
 
