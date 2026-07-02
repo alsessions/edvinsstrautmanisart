@@ -1,0 +1,44 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  ffb8b91a-3dac-4ed3-86d6-15894b1d7f38:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:b63abf07-0f7e-4994-8144-33e9b6715200'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: eba44438-976e-43a8-a4a9-28f86f22c6c2 # Page Content - Text - Text
+            handle: null
+            instructions: null
+            label: Text
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b63abf07-0f7e-4994-8144-33e9b6715200
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: b46aa30a-629d-4895-8c0d-d45eddcce12a
+        userCondition: null
+    thumbFieldKey: null
+handle: text
+hasTitleField: false
+icon: null
+name: Text
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

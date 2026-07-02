@@ -2,6 +2,7 @@ fieldLayouts:
   6678243f-8a2b-48d7-bf71-03f7b1ee0f0b:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,14 +27,19 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: f9518bdd-cb3c-4dce-9fd2-502a0eda3978
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: daf98812-69a7-4fa2-bf2c-981654ce8391
+        userCondition: null
 handle: contactForm
 hasTitleField: false
 name: 'Contact Us'
-section: 13e92352-ca92-4db4-aa5b-69b2504bfcb0 # Contact Us
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

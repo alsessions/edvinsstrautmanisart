@@ -1,17 +1,16 @@
 columnSuffix: null
 contentColumnType: text
-fieldGroup: 9983c9f1-f187-4b1c-b28d-84e91bc6627d # Work
 handle: medium
-instructions: ''
+instructions: null
 name: Medium
 searchable: false
 settings:
   byteLimit: null
   charLimit: null
-  code: ''
+  code: false
   columnType: null
-  initialRows: '4'
-  multiline: ''
+  initialRows: 4
+  multiline: false
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

@@ -2,6 +2,7 @@ fieldLayouts:
   f0d7ec16-9d30-4e02-b5ac-392fc825e967:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,24 +27,30 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 49fb1a4e-2e9f-4307-8d58-d11e1ed30403
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 1b90fc58-6fb7-49aa-840c-ca336c59833a # Optimized Images
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e411cbe5-994b-49b9-bb3d-60f467d89787
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: b1ac3953-3582-4a40-b9fa-e92705ab9c2d
+        userCondition: null
 fs: siteAssets
 handle: siteAssets
-hasUrls: true
 name: 'Site Assets'
 sortOrder: 0
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
-url: //edvinsstrautmanisart.com/assets
+transformFs: null
+transformSubpath: ''

@@ -1,16 +1,20 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 3af3b2dd-a774-4ea1-9f92-c98cfaa3d1e6 # Common
 handle: pageContent
 instructions: 'Matrix field for generic page content.'
 name: 'Page Content'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_pagecontent}}'
-  maxBlocks: ''
-  minBlocks: ''
+  entryTypes:
+    -
+      uid: 60ac3a96-fef0-43f2-b1d1-f7937dfacc75
+    -
+      uid: 76286b7a-daf6-486e-9ab8-5a848a82d90e
+  maxEntries: null
+  minEntries: null
   propagationKeyFormat: null
   propagationMethod: all
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

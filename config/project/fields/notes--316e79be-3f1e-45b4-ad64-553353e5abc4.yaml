@@ -1,17 +1,16 @@
 columnSuffix: null
 contentColumnType: text
-fieldGroup: 9983c9f1-f187-4b1c-b28d-84e91bc6627d # Work
 handle: notes
-instructions: ''
+instructions: null
 name: Notes
 searchable: false
 settings:
   byteLimit: null
   charLimit: null
-  code: ''
+  code: false
   columnType: null
-  initialRows: '4'
-  multiline: '1'
+  initialRows: 4
+  multiline: true
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

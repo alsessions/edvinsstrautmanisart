@@ -1,4 +1,4 @@
-dateModified: 1782768338
+dateModified: 1783015897
 email:
   fromEmail: info@edvinsstrautmanisart.com
   fromName: 'Edvins Strautmanis Art'
@@ -30,35 +30,26 @@ meta:
   __names__:
     1b31ea90-ae44-49ed-8e11-953acd5449c8: Category # Category
     1b90fc58-6fb7-49aa-840c-ca336c59833a: 'Optimized Images' # Optimized Images
-    2f129d38-12e3-4dcd-a850-0a9be8a02b94: New # New
-    3af3b2dd-a774-4ea1-9f92-c98cfaa3d1e6: Common # Common
-    04da194b-c150-46d1-8de8-211d6398d29d: Simple # Simple
     6b1c07bc-2f79-41d4-8cfd-faf0a21382c4: Image # Image
     7d4c7977-cd8d-4bda-92b3-cef519b1c389: Work # Work
-    9e4a7cae-7f3f-4ee3-8d7b-2f6833d4d16f: 'Contact Form' # Contact Form
     10bf254c-f11e-41a7-bc5c-25794fd826cc: 'Edvins Strautmanis Art' # Edvins Strautmanis Art
     11f6a896-fc06-4d68-92c6-27bef538e4a3: Pages # Pages
     13e92352-ca92-4db4-aa5b-69b2504bfcb0: 'Contact Us' # Contact Us
     16ebf092-cb35-4d3a-8e99-d7d441a12f71: New # New
     38b23a9d-00da-4029-8b23-ad8a7db99391: 'Big Thumb' # Big Thumb
-    60ac3a96-fef0-43f2-b1d1-f7937dfacc75: Text # Text
     66a55a9d-71ea-4c99-a19f-72fbba755e52: Work # Work
     92b9648b-9d74-4877-b379-b885622d0a06: Thumb # Thumb
     97c731cf-c3f7-4a80-ae6f-203982b035ed: 'Contact Us' # Contact Us
     316e79be-3f1e-45b4-ad64-553353e5abc4: Notes # Notes
     373e57fd-8b25-4bda-a891-5a8e39c00669: 'Edvins Strautmanis Art' # Edvins Strautmanis Art
-    411a2b2a-43f0-4f3e-9a3e-f7bcd29418e1: Catgories # Catgories
     6682d502-8e26-4c8c-8d49-347ba76eeeeb: Home # Home
-    9983c9f1-f187-4b1c-b28d-84e91bc6627d: Work # Work
     18252c25-8d55-4941-bc7b-71c03a3d0372: Size # Size
     39111da2-ccb6-45d7-abae-c353a6e1b2c4: About # About
-    76286b7a-daf6-486e-9ab8-5a848a82d90e: Image # Image
     83887eb1-4ce1-461b-a2d8-5b72d7cd8eb0: Home # Home
     3954844c-6fbc-40ef-a444-452507d1881a: sixxfour # sixxfour
     4930256a-a90d-47b7-8884-05151924bc2a: 'Public Schema' # Public Schema
     a955b2d3-60ee-4dcb-8f3b-f1b3aef05893: 'Page Content' # Page Content
     afd26d5c-5d99-4270-bbb1-300f0c9f8c8e: Year # Year
-    b09940e1-80ab-40e5-976c-98d465216d2e: New # New
     b3d7c48e-857b-4b01-b594-5334932d5fb9: Paintings # Paintings
     b24a58d0-641a-49db-baf0-aa04cbcfbda8: Medium # Medium
     cc5b8db8-d1b2-464b-ad1c-08e5aadd72d0: Work # Work
@@ -66,39 +57,24 @@ meta:
     d32ee691-cade-4bed-ab28-97461af96d11: 'Site Assets' # Site Assets
     dc4f5604-2387-421e-a11b-8035fd08f095: Medium(640w) # Medium(640w)
     e00f1be3-1fff-49af-81ca-5e24f21f84de: 'Square Thumb' # Square Thumb
-    e95eb7a9-0dc9-4fbc-b127-96f956cbe14e: Image # Image
     e943be92-d528-4d31-93c5-4e85d47cb76f: Featured # Featured
     e27591a4-219b-4d25-b9ec-54f0af397f11: Description # Description
-    eba44438-976e-43a8-a4a9-28f86f22c6c2: Text # Text
+    eba44438-976e-43a8-a4a9-28f86f22c6c2: 'Page Content - Text - Text' # Page Content - Text - Text
     ec6a5247-8cc6-4adf-ae21-d904992a802d: Pages # Pages
 plugins:
   ckeditor:
     edition: standard
     enabled: true
-    schemaVersion: 3.0.0.0
-  contact-form-honeypot:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-    settings:
-      honeypotParam: secretStuff
-  cp-clearcache:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
+    schemaVersion: 5.6.0.0
   expanded-singles:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  feed-me:
-    edition: standard
-    enabled: true
-    schemaVersion: 5.14.0
   formie:
     edition: standard
     enabled: true
     licenseKey: WKOQD375H01U32VYSC9844X2
-    schemaVersion: 2.0.21
+    schemaVersion: 3.4.12
     settings:
       ajaxTimeout: 10
       alertEmails: null
@@ -513,7 +489,7 @@ plugins:
           __assoc__:
             -
               - policy
-              - '''self'''
+              - "'self'"
       devModeCpTitlePrefix: ''
       devModeTitlePrefix: ''
       displayAnalysisSidebar: true
@@ -554,7 +530,7 @@ system:
   live: true
   name: 'Edvins Strautmanis Art'
   retryDuration: null
-  schemaVersion: 4.17.0.3
+  schemaVersion: 5.10.0.0
   timeZone: America/New_York
 users:
   allowPublicRegistration: false

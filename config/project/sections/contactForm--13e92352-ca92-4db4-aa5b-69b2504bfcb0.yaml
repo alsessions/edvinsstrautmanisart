@@ -1,7 +1,16 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: 97c731cf-c3f7-4a80-ae6f-203982b035ed # Contact Us
 handle: contactForm
+maxAuthors: 1
+minAuthors: 1
 name: 'Contact Us'
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   373e57fd-8b25-4bda-a891-5a8e39c00669: # Edvins Strautmanis Art

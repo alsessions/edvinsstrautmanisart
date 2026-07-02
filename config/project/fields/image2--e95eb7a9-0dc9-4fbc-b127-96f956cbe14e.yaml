@@ -1,8 +1,7 @@
 columnSuffix: null
-contentColumnType: string
-handle: image
+handle: image2
 instructions: null
-name: Image
+name: 'Page Content - Image - Image'
 searchable: false
 settings:
   allowSelfRelations: false
@@ -10,9 +9,9 @@ settings:
   allowUploads: true
   allowedKinds: null
   branchLimit: null
+  defaultPlacement: end
   defaultUploadLocationSource: 'volume:d32ee691-cade-4bed-ab28-97461af96d11' # Site Assets
-  defaultUploadLocationSubpath: /paintings
-  localizeRelations: false
+  defaultUploadLocationSubpath: null
   maintainHierarchy: false
   maxRelations: null
   minRelations: null
@@ -23,6 +22,7 @@ settings:
   restrictedLocationSource: 'volume:d32ee691-cade-4bed-ab28-97461af96d11' # Site Assets
   restrictedLocationSubpath: null
   selectionLabel: null
+  showSearchInput: true
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
@@ -31,5 +31,5 @@ settings:
   validateRelatedElements: false
   viewMode: list
 translationKeyFormat: null
-translationMethod: site
+translationMethod: none
 type: craft\fields\Assets

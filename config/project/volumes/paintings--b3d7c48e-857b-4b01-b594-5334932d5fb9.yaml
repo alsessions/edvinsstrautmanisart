@@ -2,6 +2,7 @@ fieldLayouts:
   e968688e-51e1-44e5-9172-9f18369c6427:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,24 +27,30 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 6d645d7d-43c8-414a-a0b2-d8bc002b1e6a
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 1b90fc58-6fb7-49aa-840c-ca336c59833a # Optimized Images
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: da181680-7f26-48cc-a8a7-5f4cfdfa72b8
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 73534606-bf9d-4ca1-a47c-57dcf2550580
+        userCondition: null
 fs: paintings
 handle: paintings
-hasUrls: true
 name: Paintings
 sortOrder: 0
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
-url: '@webroot/assets/paintings'
+transformFs: null
+transformSubpath: ''

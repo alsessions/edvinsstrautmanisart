@@ -7,16 +7,13 @@
 		<section class="content mx-auto my-12 px-4">
 			<h1 class="text-3xl mb-4 text-gray-800 font-light">{{ entry.title }}</h1>
       <div class="grid md:grid-cols-12 gap-4">
-{#
-<div class="md:col-span-7">
-  {{ craft.freeform.form("siteContact").render() }}
-		
-        </div>
-#}
+
 
         <div class="md:col-span-7">
 {# Create a form query with the 'handle' parameter #}
-{% set form = entry.contactUs.one() %}
+
+
+{% set form = craft.formie.forms({ handle: 'contactUs' }).one() %}
 
 {{ craft.formie.renderForm(form) }}
 

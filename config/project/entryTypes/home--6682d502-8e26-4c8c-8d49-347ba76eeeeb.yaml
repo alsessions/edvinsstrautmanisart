@@ -2,6 +2,7 @@ fieldLayouts:
   268a7f99-c9fa-42e4-a524-677a99b5d479:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,41 +27,55 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 91882a23-4a84-44c5-a64b-cc38adc7a990
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 1b90fc58-6fb7-49aa-840c-ca336c59833a # Optimized Images
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: bbe0e009-d0f6-4adc-b5db-278ac2f38879
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: a955b2d3-60ee-4dcb-8f3b-f1b3aef05893 # Page Content
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 26a8248d-f97d-4490-90d7-042bc6b1d2cf
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 6b1c07bc-2f79-41d4-8cfd-faf0a21382c4 # Image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 66f2d910-4d4a-4646-a80d-36db12e96473
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 8f02ff26-0497-42bd-a9c2-34b229988ee0
+        userCondition: null
 handle: home
 hasTitleField: false
 name: Home
-section: 83887eb1-4ce1-461b-a2d8-5b72d7cd8eb0 # Home
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

@@ -2,6 +2,7 @@ fieldLayouts:
   2a24987c-1821-4570-bbc7-3190a7e78390:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,77 +27,103 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 4ec73f09-50ea-4ab9-a56d-e737e989fea3
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: e943be92-d528-4d31-93c5-4e85d47cb76f # Featured
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 2d2da78a-1726-4ff0-adb1-96dcd612f1b9
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 1b31ea90-ae44-49ed-8e11-953acd5449c8 # Category
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 656047aa-5305-488f-b790-e5fb33f4c3fa
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 6b1c07bc-2f79-41d4-8cfd-faf0a21382c4 # Image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 22d54702-04b6-48e0-bce0-973cee776ca8
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 18252c25-8d55-4941-bc7b-71c03a3d0372 # Size
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 54902d31-da2d-4007-8d8a-a5c3c1452d08
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: afd26d5c-5d99-4270-bbb1-300f0c9f8c8e # Year
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: a867f937-47c3-415a-9588-42b3a3bac922
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: b24a58d0-641a-49db-baf0-aa04cbcfbda8 # Medium
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ba4ca6cd-9c92-47a4-8d38-99bb04cf1fcb
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 316e79be-3f1e-45b4-ad64-553353e5abc4 # Notes
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: cbd75021-7de3-4a35-b0a8-653567dd1c90
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 63fab755-dd50-45a8-8fda-8cdf9da3b2c0
+        userCondition: null
 handle: work
 hasTitleField: true
 name: Work
-section: 66a55a9d-71ea-4c99-a19f-72fbba755e52 # Work
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

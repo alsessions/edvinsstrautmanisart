@@ -2792,14 +2792,6 @@ input#secretStuff {
     line-height: 1;
   }
 
-  .md\:font-light {
-    font-weight: 300;
-  }
-
-  .md\:font-bold {
-    font-weight: 700;
-  }
-
   .md\:font-medium {
     font-weight: 500;
   }

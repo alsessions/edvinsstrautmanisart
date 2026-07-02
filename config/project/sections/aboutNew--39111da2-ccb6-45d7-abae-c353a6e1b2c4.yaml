@@ -1,7 +1,16 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: d1b4dfd7-357d-4c22-8833-c08cfd6ddabb # About
 handle: aboutNew
+maxAuthors: 1
+minAuthors: 1
 name: About
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   373e57fd-8b25-4bda-a891-5a8e39c00669: # Edvins Strautmanis Art

@@ -1,14 +1,13 @@
 columnSuffix: null
 contentColumnType: text
-fieldGroup: 9983c9f1-f187-4b1c-b28d-84e91bc6627d # Work
 handle: optimizedImages
-instructions: ''
+instructions: null
 name: 'Optimized Images'
 searchable: false
 settings:
-  displayDominantColorPalette: ''
-  displayLazyLoadPlaceholderImages: ''
-  displayOptimizedImageVariants: '1'
+  displayDominantColorPalette: false
+  displayLazyLoadPlaceholderImages: false
+  displayOptimizedImageVariants: true
   fieldVolumeSettings:
     __assoc__:
       -
