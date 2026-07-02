@@ -1,4 +1,4 @@
-dateModified: 1783021392
+dateModified: 1783021941
 email:
   fromEmail: info@edvinsstrautmanisart.com
   fromName: 'Edvins Strautmanis Art'
@@ -362,10 +362,10 @@ plugins:
                         - recaptcha
                       -
                         - secretKey
-                        - 6LcTe-oqAAAAAF2AlcSdBi3USjkZgTig0fGCaxJG
+                        - 6Lf-tkEtAAAAALU6QODI8Fy5VmXnKb2Gg9PHNIEg
                       -
                         - siteKey
-                        - 6LcTe-oqAAAAAAJT3ki3MSdSL4z5U19VE4uBump8
+                        - 6Lf-tkEtAAAAALU6QODI8Fy5VmXnKb2Gg9PHNIEg
                       -
                         - type
                         - v3
