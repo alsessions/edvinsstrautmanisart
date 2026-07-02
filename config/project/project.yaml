@@ -1,13 +1,13 @@
-dateModified: 1783015897
+dateModified: 1783021392
 email:
   fromEmail: info@edvinsstrautmanisart.com
   fromName: 'Edvins Strautmanis Art'
   replyToEmail: null
   template: null
   transportSettings:
-    host: smtppro.zoho.com
+    host: smtp.zoho.com
     password: en3Factah1Wedge!
-    port: '465'
+    port: '587'
     useAuthentication: '1'
     username: info@edvinsstrautmanisart.com
   transportType: craft\mail\transportadapters\Smtp
@@ -78,6 +78,7 @@ plugins:
     settings:
       ajaxTimeout: 10
       alertEmails: null
+      allowPublicVolumes: true
       captchas:
         __assoc__:
           -
@@ -216,9 +217,12 @@ plugins:
                         - handle
                         - friendlyCaptcha
                       3:
+                        - apiVersion
+                        - v1
+                      4:
                         - language
                         - en
-                      4:
+                      5:
                         - startMode
                         - none
           -
@@ -345,7 +349,7 @@ plugins:
                   - verbb\formie\integrations\captchas\Recaptcha
                 -
                   - enabled
-                  - '0'
+                  - '1'
                 -
                   - saveSpam
                   - true
@@ -390,6 +394,7 @@ plugins:
       defaultDateTime: null
       defaultDateValueOption: ''
       defaultEmailTemplate: ''
+      defaultExportFolder: '@storage/formie-export'
       defaultFileUploadVolume: ''
       defaultFormTemplate: ''
       defaultInstructionsPosition: verbb\formie\positions\AboveInput
@@ -400,6 +405,7 @@ plugins:
       enableCsrfValidationForGuests: true
       enableLargeFieldStorage: false
       enableUnloadWarning: true
+      filterIntegrationMapping: true
       includeDraftElementUsage: false
       includeRevisionElementUsage: false
       maxIncompleteSubmissionAge: 30
@@ -418,7 +424,9 @@ plugins:
       spamEmailNotifications: false
       spamKeywords: ''
       spamLimit: 500
-      useEmailTemplateForFieldVariables: false
+      submissionSidebarFormOrder: dateCreatedDesc
+      submissionsBehaviour: all
+      useCssLayers: false
       useQueueForIntegrations: true
       useQueueForNotifications: true
       validateCustomTemplates: true
