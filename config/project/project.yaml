@@ -1,4 +1,4 @@
-dateModified: 1783021941
+dateModified: 1783022205
 email:
   fromEmail: info@edvinsstrautmanisart.com
   fromName: 'Edvins Strautmanis Art'
@@ -7,7 +7,7 @@ email:
   transportSettings:
     host: smtp.zoho.com
     password: en3Factah1Wedge!
-    port: '587'
+    port: '465'
     useAuthentication: '1'
     username: info@edvinsstrautmanisart.com
   transportType: craft\mail\transportadapters\Smtp
