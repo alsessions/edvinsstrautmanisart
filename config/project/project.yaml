@@ -1,15 +1,15 @@
-dateModified: 1783024940
+dateModified: 1783972064
 email:
   fromEmail: info@edvinsstrautmanisart.com
   fromName: 'Edvins Strautmanis Art'
   replyToEmail: null
   template: null
   transportSettings:
-    host: smtp.zoho.com
-    password: en3Factah1Wedge!
+    host: smtp.postmarkapp.com
+    password: 63a2525a-7063-4479-8be1-d7b3763b374e
     port: '587'
     useAuthentication: '1'
-    username: info@edvinsstrautmanisart.com
+    username: 63a2525a-7063-4479-8be1-d7b3763b374e
   transportType: craft\mail\transportadapters\Smtp
 fs:
   paintings:
@@ -118,10 +118,10 @@ plugins:
                   - settings
                   -
                     __assoc__:
-                      0:
+                      -
                         - handle
                         - captchaEu
-                      3:
+                      -
                         - endPoint
                         - 'https://www.captcha.eu'
           -
@@ -161,19 +161,19 @@ plugins:
                   - settings
                   -
                     __assoc__:
-                      0:
+                      -
                         - handle
                         - turnstile
-                      3:
+                      -
                         - scriptLoadingMethod
                         - asyncDefer
-                      4:
+                      -
                         - theme
                         - auto
-                      5:
+                      -
                         - size
                         - normal
-                      6:
+                      -
                         - appearance
                         - always
           -
@@ -213,16 +213,16 @@ plugins:
                   - settings
                   -
                     __assoc__:
-                      0:
+                      -
                         - handle
                         - friendlyCaptcha
-                      3:
+                      -
                         - apiVersion
                         - v1
-                      4:
+                      -
                         - language
                         - en
-                      5:
+                      -
                         - startMode
                         - none
           -
@@ -242,22 +242,22 @@ plugins:
                   - settings
                   -
                     __assoc__:
-                      0:
+                      -
                         - handle
                         - hcaptcha
-                      3:
+                      -
                         - size
                         - normal
-                      4:
+                      -
                         - theme
                         - light
-                      5:
+                      -
                         - language
                         - en
-                      6:
+                      -
                         - minScore
                         - 0.5
-                      7:
+                      -
                         - scriptLoadingMethod
                         - asyncDefer
           -
