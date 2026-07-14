@@ -1,4 +1,4 @@
-dateModified: 1783972064
+dateModified: 1784059672
 email:
   fromEmail: info@edvinsstrautmanisart.com
   fromName: 'Edvins Strautmanis Art'
@@ -6,10 +6,10 @@ email:
   template: null
   transportSettings:
     host: smtp.postmarkapp.com
-    password: 63a2525a-7063-4479-8be1-d7b3763b374e
+    password: wFHotl82c7pmmxwEq7O3DNhbLGBufRIgvMqf
     port: '587'
     useAuthentication: '1'
-    username: 63a2525a-7063-4479-8be1-d7b3763b374e
+    username: PM-T-form-notificatio-8WU7VtqeWkbFjV
   transportType: craft\mail\transportadapters\Smtp
 fs:
   paintings:
