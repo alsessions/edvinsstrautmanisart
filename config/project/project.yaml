@@ -1,4 +1,4 @@
-dateModified: 1784059672
+dateModified: 1784478580
 email:
   fromEmail: info@edvinsstrautmanisart.com
   fromName: 'Edvins Strautmanis Art'
@@ -118,10 +118,10 @@ plugins:
                   - settings
                   -
                     __assoc__:
-                      -
+                      0:
                         - handle
                         - captchaEu
-                      -
+                      3:
                         - endPoint
                         - 'https://www.captcha.eu'
           -
@@ -161,19 +161,19 @@ plugins:
                   - settings
                   -
                     __assoc__:
-                      -
+                      0:
                         - handle
                         - turnstile
-                      -
+                      3:
                         - scriptLoadingMethod
                         - asyncDefer
-                      -
+                      4:
                         - theme
                         - auto
-                      -
+                      5:
                         - size
                         - normal
-                      -
+                      6:
                         - appearance
                         - always
           -
@@ -213,16 +213,16 @@ plugins:
                   - settings
                   -
                     __assoc__:
-                      -
+                      0:
                         - handle
                         - friendlyCaptcha
-                      -
+                      3:
                         - apiVersion
                         - v1
-                      -
+                      4:
                         - language
                         - en
-                      -
+                      5:
                         - startMode
                         - none
           -
@@ -242,22 +242,22 @@ plugins:
                   - settings
                   -
                     __assoc__:
-                      -
+                      0:
                         - handle
                         - hcaptcha
-                      -
+                      3:
                         - size
                         - normal
-                      -
+                      4:
                         - theme
                         - light
-                      -
+                      5:
                         - language
                         - en
-                      -
+                      6:
                         - minScore
                         - 0.5
-                      -
+                      7:
                         - scriptLoadingMethod
                         - asyncDefer
           -
@@ -362,10 +362,10 @@ plugins:
                         - recaptcha
                       -
                         - secretKey
-                        - 6Lf-tkEtAAAAALU6QODI8Fy5VmXnKb2Gg9PHNIEg
+                        - 6LcN2jItAAAAAJccfaPPAdULqDzP_6qUuqI1-qk0
                       -
                         - siteKey
-                        - 6Lf-tkEtAAAAALU6QODI8Fy5VmXnKb2Gg9PHNIEg
+                        - 6LcN2jItAAAAAKnbne_VQOtQBNj-NHWHBJbNsiDZ
                       -
                         - type
                         - v3
@@ -415,6 +415,7 @@ plugins:
       pdfPaperSize: letter
       pluginName: Formie
       queuePriority: null
+      redirectUri: null
       saveSpam: true
       sendEmailAlerts: false
       sentNotifications: true
