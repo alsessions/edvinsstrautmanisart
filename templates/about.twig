@@ -1,13 +1,13 @@
 {% include '/partials/_head.twig' %}
 
-<body>
+<body class="bg-gray-900">
 
 	{% include '/partials/_nav-dark.twig' %}
-	<main class="container  max-w-7xl px-4 mx-auto">
-		<section class="prose prose-lg prose-headings:font-normal prose-headings:text-gray-400 max-w-none mx-auto">
+	<main class="container  max-w-7xl px-4 mx-auto min-h-screen">
+		<section class="prose prose-lg prose-invert prose-headings:font-normal prose-headings:text-gray-50 max-w-none mx-auto">
 			<h1 class="mt-20">{{ entry.title }}</h1>
 
-			<div class="grid md:grid-cols-2 gap-12 prose prose-lg max-w-none">
+			<div class="grid md:grid-cols-2 gap-12 prose prose-lg prose-invert prose-headings:font-normal prose-headings:text-gray-50 max-w-none">
 				{% for block in entry.pageContent.all() %}
 					<div>
 						{% switch block.type %}
@@ -23,7 +23,7 @@
 									{% set optimizedImages = block.image.one().optimizedImages %}
 									<picture>
 										<source srcset="{{ optimizedImages.srcsetWebP() }}" sizes="100vw" type="image/webp"/>
-										<img src="{{ optimizedImages.src() }}" srcset="{{ optimizedImages.srcset() }}" sizes="100vw" class="my-4 p-6 rounded-md" alt="Page image"/>
+										<img src="{{ optimizedImages.src() }}" srcset="{{ optimizedImages.srcset() }}" sizes="100vw" class="my-4 p-6 bg-gray-800 border border-gray-600 rounded-sm" alt="Page image"/>
 									</picture>
 
 								</div>
@@ -37,11 +37,11 @@
 
 				</section>
 
-				<section class=" mt-12 prose prose-lg max-w-none">
+				<section class=" mt-12 prose prose-lg prose-invert prose-headings:font-normal prose-headings:text-gray-50 max-w-none">
 
-					<h2 class="text-gray-800 text-2xl my-10 font-light">Cesis Art Festival &mdash; 2019</h2>
+					<h2 class="text-gray-50 text-2xl my-10 font-light">Cesis Art Festival &mdash; 2019</h2>
 
-					<img src="/assets/cesis_gallery_wid-croppede.jpg" class="mb-4 w-full rounded">
+					<img src="/assets/cesis_gallery_wid-croppede.jpg" class="mb-4 w-full border border-gray-600 rounded-sm">
 
 					<p>In July 2019,
 						<strong>The National Art Museum of
@@ -55,16 +55,16 @@
 						creative period of the artists’ career</p>
 
 					<p>
-						<a href="/work/cesis" class="text-blue-600">View Gallery</a>
+						<a href="/work/cesis" class="text-gray-200 hover:text-gray-400 border-b border-dotted border-gray-50">View Gallery</a>
 					</p>
 
 				</section>
 				<div class="grid md:grid-cols-2 gap-12">
-					<section class="md:my-12 content">
-						<h2 class="text-gray-800 text-2xl mt-10 mb-2">Exhibitions &amp; Collections</h2>
-						<div class="tab w-full overflow-hidden border-t">
+					<section class="md:my-12 content text-gray-300">
+						<h2 class="text-gray-50 text-2xl mt-10 mb-2">Exhibitions &amp; Collections</h2>
+						<div class="tab w-full overflow-hidden border-t border-gray-600">
 							<input class="absolute opacity-0" id="tab-single-one" type="radio" name="tabs2">
-							<label class="block py-3 text-gray-600 text-lg leading-normal font-medium cursor-pointer" for="tab-single-one">Solo Exhibitions</label>
+							<label class="block py-3 text-gray-300 hover:text-gray-50 text-lg leading-normal font-medium cursor-pointer" for="tab-single-one">Solo Exhibitions</label>
 							<div class="tab-content overflow-hidden  leading-normal pl-4">
 								<p>1996- Staller Center for the Arts, Stony Brook, NY</p>
 								<p>1994- Stephen Rosenburg Gallery, NYC</p>
@@ -96,9 +96,9 @@
 								<p>1965- University of Chicago, IL</p>
 							</div>
 						</div>
-						<div class="tab w-full overflow-hidden border-t">
+						<div class="tab w-full overflow-hidden border-t border-gray-600">
 							<input class="absolute opacity-0" id="tab-single-two" type="radio" name="tabs2">
-							<label class="block py-3 text-gray-600 font-medium text-lg leading-normal cursor-pointer" for="tab-single-two">Group Exhibitions</label>
+							<label class="block py-3 text-gray-300 hover:text-gray-50 font-medium text-lg leading-normal cursor-pointer" for="tab-single-two">Group Exhibitions</label>
 							<div class="tab-content overflow-hidden  leading-normal pl-4">
 								<p>2002- Abstraction, Allan Stone Gallery, New York, NY</p>
 								<p>1997- One of A Kind, Rosenberg + Kaufman Gallery, New York, NY</p>
@@ -133,9 +133,9 @@
 								<p>1962- 12 Chicago Artists, McCormick Place Gallery, Chicago, IL</p>
 							</div>
 						</div>
-						<div class="tab w-full overflow-hidden border-t">
+						<div class="tab w-full overflow-hidden border-t border-gray-600">
 							<input class="absolute opacity-0" id="tab-single-three" type="radio" name="tabs2">
-							<label class="block py-3 text-gray-600 text-lg font-medium leading-normal cursor-pointer" for="tab-single-three">Permanent Collections</label>
+							<label class="block py-3 text-gray-300 hover:text-gray-50 text-lg font-medium leading-normal cursor-pointer" for="tab-single-three">Permanent Collections</label>
 							<div class="tab-content overflow-hidden leading-normal pl-4">
 								<p>Chase Manhattan Bank, New York, NY</p>
 								<p>AT&T Company, New York, NY</p>
@@ -157,24 +157,24 @@
 
 					</section>
 
-					<section class="md:my-12 content">
-						<h2 class="text-gray-800 text-2xl mt-10 mb-2">Bibliography</h2>
-						<div class="tab w-full overflow-hidden border-t">
+					<section class="md:my-12 content text-gray-300">
+						<h2 class="text-gray-50 text-2xl mt-10 mb-2">Bibliography</h2>
+						<div class="tab w-full overflow-hidden border-t border-gray-600">
 							<input class="absolute opacity-0" id="tab-single-four" type="radio" name="tabs2">
-							<label class="block py-3 text-gray-600 text-lg font-medium leading-normal cursor-pointer" for="tab-single-four">Citations</label>
+							<label class="block py-3 text-gray-300 hover:text-gray-50 text-lg font-medium leading-normal cursor-pointer" for="tab-single-four">Citations</label>
 							<div class="tab-content overflow-hidden  leading-normal pl-4">
 								<p class="">Edvins Strautmanis, Abstract Painter, 58.
-								<a href="https://www.nytimes.com/1992/08/08/obituaries/edvins-strautmanis-abstract-painter-58.html" class="text-blue-600 hover:underline">The New York Times</a>.</p>
+								<a href="https://www.nytimes.com/1992/08/08/obituaries/edvins-strautmanis-abstract-painter-58.html" class="text-gray-200 hover:text-gray-400 border-b border-dotted border-gray-50">The New York Times</a>.</p>
 									
 									<p class="">Stony Brook University Catalog.
-								<a href="https://ir.stonybrook.edu/xmlui/bitstream/handle/11401/2930/Art_Piece_53.pdf?sequence=1" class="text-blue-600 hover:underline">SUNY Stony Brook [PDF]</a>.</p>
+								<a href="https://ir.stonybrook.edu/xmlui/bitstream/handle/11401/2930/Art_Piece_53.pdf?sequence=1" class="text-gray-200 hover:text-gray-400 border-b border-dotted border-gray-50">SUNY Stony Brook [PDF]</a>.</p>
 									
-									<p class="">Nathan Manilow Sculpture Park Collection.<a href="http://www.publicartinchicago.com/nathan-manilow-sculpture-park-nmsp-collection-phoenix-by-edvins-strautmanis/" class="text-blue-600 hover:underline">Public Art in Chicago</a>.</p>
+									<p class="">Nathan Manilow Sculpture Park Collection.<a href="http://www.publicartinchicago.com/nathan-manilow-sculpture-park-nmsp-collection-phoenix-by-edvins-strautmanis/" class="text-gray-200 hover:text-gray-400 border-b border-dotted border-gray-50">Public Art in Chicago</a>.</p>
 									
 									<p class="">Cēsis Art Festival 2019.
-								<a href="https://arterritory.com/en/visual_arts/articles/24195-cesis_art_festival_2019_highlights/" class="text-blue-600 hover:underline">Art Territory</a>.</p>
+								<a href="https://arterritory.com/en/visual_arts/articles/24195-cesis_art_festival_2019_highlights/" class="text-gray-200 hover:text-gray-400 border-b border-dotted border-gray-50">Art Territory</a>.</p>
 									
-									<p class="">Roberta Pancoast Smith on Edvins Strautmanis. <a href="https://www.artforum.com/print/reviews/197304/edvins-strautmanis-71501" class="text-blue-600 hover:underline">Art Forum</a>.</p>
+									<p class="">Roberta Pancoast Smith on Edvins Strautmanis. <a href="https://www.artforum.com/print/reviews/197304/edvins-strautmanis-71501" class="text-gray-200 hover:text-gray-400 border-b border-dotted border-gray-50">Art Forum</a>.</p>
 
 							</div>
 						</div>
@@ -183,28 +183,28 @@
 				</div>
 
 				<section class="my-12">
-					<h2 class="text-gray-800 text-2xl mt-4 mb-2">Video &amp; Other Media</h2>
+					<h2 class="text-gray-50 text-2xl mt-4 mb-2">Video &amp; Other Media</h2>
 
 					<div class="flex flex-wrap -mx-2">
 						<div class="w-full md:w-1/2 px-2">
-							<h3 class="mb-2 text-gray-700 text-lg font-medium">Portrait of a Painter</h3>
+							<h3 class="mb-2 text-gray-200 text-lg font-medium">Portrait of a Painter</h3>
 							<div class=" relative aspect-ratio-16/9 ">
 
 								<iframe src="https://www.youtube.com/embed/yL0sD5oXarA" frameborder="0" allow="accelerometer; autoplay;modestbranding=1; controls=0;encrypted-media; gyroscope; picture-in-picture; rel=0" allowfullscreen class="absolute left-0 top-0 w-full h-full object-cover"></iframe>
 
 							</div>
-							<p class="text-gray-700 p-2 leading-relaxed mt-2">
+							<p class="text-gray-300 p-2 leading-relaxed mt-2">
 								A narrated film by
 								<strong>Michel Auder</strong>
 								showing Strautmanis at work in his SOHO studio. Made in 1983 when Strautmanis was at the peak of his career the  brief narrated film includes a tour of the artist's SOHO loft.</p>
 						</div>
 
 						<div class="w-full md:w-1/2 px-2">
-							<h3 class="mb-2 text-gray-700 text-lg font-medium">Images/Art New York</h3>
+							<h3 class="mb-2 text-gray-200 text-lg font-medium">Images/Art New York</h3>
 							<div class="relative aspect-ratio-16/9">
 								<iframe src="https://www.youtube.com/embed/L9Q23Ah6VrE" frameborder="0" allow="accelerometer; autoplay; modestbranding=1; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="absolute left-0 top-0 w-full h-full object-cover"></iframe>
 							</div>
-							<p class="text-gray-700 p-2 leading-relaxed  mt-2">
+							<p class="text-gray-300 p-2 leading-relaxed  mt-2">
 								An extended interview, a tour of the artist's SOHO studio and unique footage of Strautmanis at work. Produced and Directed by
 								<strong>Bill Page</strong>
 								for
@@ -212,11 +212,11 @@
 						</div>
 
 						<div class="w-full md:w-1/2 px-2">
-							<h3 class="mb-2 text-gray-700 text-lg font-medium">SUNY Stony Brook - 1996</h3>
+							<h3 class="mb-2 text-gray-200 text-lg font-medium">SUNY Stony Brook - 1996</h3>
 							<div class="relative aspect-ratio-16/9">
 								<iframe src="https://www.youtube.com/embed/CO0lfNrzeyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="absolute left-0 top-0 w-full h-full object-cover"></iframe>
 							</div>
-							<p class="text-gray-700 p-2 leading-relaxed  mt-2">
+							<p class="text-gray-300 p-2 leading-relaxed  mt-2">
 								An overview of Strautmanis' 1996 exhibition at the State University of New York, Stony Brook.</p>
 						</div>
 					</div>
