@@ -65,9 +65,15 @@
 				{% set entries = myEntryQuery.all() %}
 				{# Display the entries #}
 				{% for entry in entries %}
+				<div>
 				{% set asset = entry.image.one() %}
 				<a href=" {{ entry.url }}"><img src="{{ asset.url ('bigThumb') }}"
 						class="opacity-100 shadow-xl hover:opacity-70 hover:transition-opacity duration-500   bg-gray-100 border border-gray-600 rounded-sm"></a>
+				<div class="flex flex-wrap justify-between px-2">
+				<p class="mt-2 text-gray-400 italic">{{ entry.size }} inches</p>
+				<p class="mt-2 text-gray-400 italic">{{ entry.year }}</p>
+				</div>
+				</div>
 				{% endfor %}
 			</div>
 			<p class="my-6 md:py-10 font-light uppercase  tracking-wider text-right">
@@ -87,8 +93,14 @@
 				{% set entries = myEntryQuery.all() %}
 				{# Display the entries #}
 				{% for entry in entries %}
+				<div>
 				{% set asset = entry.image.one() %}
 				<a href=" {{ entry.url }}"><img src="{{ asset.url ('bigThumb') }}" class="opacity-100 shadow-xl hover:opacity-70 hover:transition-opacity duration-500   bg-gray-100 border border-gray-600 rounded-sm"></a>
+				<div class="flex flex-wrap justify-between px-2">
+				<p class="mt-2 text-gray-400 italic">{{ entry.size }} inches</p>
+				<p class="mt-2 text-gray-400 italic">{{ entry.year }}</p>
+				</div>
+				</div>
 				{% endfor %}
 			</div>
 			<p class="my-6 md:py-10 font-light uppercase  tracking-wider text-right">
