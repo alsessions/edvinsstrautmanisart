@@ -1,6 +1,6 @@
 {% include '/partials/_head.twig' %}
 
-<body class="bg-gray-100">
+<body class="bg-gray-900">
 	{% include '/partials/_nav-dark.twig' %}
 	<!--
 	<div class="w-full bg-gray-400 flex items-center md:pt-10 md:pb-20"
@@ -22,7 +22,7 @@
 -->
 	<main class=" mx-auto container min-h-screen px-6 mb-20">
 		<section class="pt-10">
-			<h2 class="text-gray-500 text-xl md:text-3xl pt-10 mb-6 uppercase">Large Paintings</h2>
+			<h2 class="text-gray-50 text-xl md:text-3xl pt-10 mb-6 uppercase">Large Paintings</h2>
 			<div class="grid grid-cols-2 md:grid-cols-3 gap-10 mx-auto">
 			
 					{% set myEntryQuery = craft.entries()
@@ -38,11 +38,11 @@
 				<a href=" {{ entry.url }}">
 					<img src="{{ image.optimizedImages.src() }}"
 						srcset="{{ image.optimizedImages.srcset() }}"
-						class="opacity-100 shadow-xl hover:opacity-70 hover:transition-opacity duration-500   border border-gray-500 rounded">
+						class="opacity-100 shadow-xl hover:opacity-70 hover:transition-opacity duration-500   bg-gray-100 border border-gray-600 rounded-sm">
 				</a>
 				<div class="flex flex-wrap justify-between px-2">
-				<p class="mt-2 text-gray-500 italic">{{ entry.size }} inches</p>
-				<p class="mt-2 text-gray-500 italic">{{ entry.year }}</p>
+				<p class="mt-2 text-gray-400 italic">{{ entry.size }} inches</p>
+				<p class="mt-2 text-gray-400 italic">{{ entry.year }}</p>
 				</div>
 				</div>
 				{% endfor %}
@@ -50,12 +50,12 @@
 			</div>
 			<p class="my-6 md:py-10 font-light uppercase  tracking-wider text-right">
 				<a href="/work/large"
-					class="text-gray-700 rounded-sm   hover:text-gray-900 py-2 px-3">All
+					class="text-gray-300 rounded-sm   hover:text-gray-50 py-2 px-3">All
 					Paintings</a>
 			</p>
 		</section>
 		<section class="pt-10">
-			<h2 class="text-gray-500 text-xl md:text-2xl pt-10 mb-4 uppercase">Medium Paintings</h2>
+			<h2 class="text-gray-50 text-xl md:text-2xl pt-10 mb-4 uppercase">Medium Paintings</h2>
 			<div class="grid grid-cols-3 gap-6">
 				{# Create an entry query with the 'section' and 'limit' parameters #}
 				{% set myEntryQuery = craft.entries()
@@ -67,17 +67,17 @@
 				{% for entry in entries %}
 				{% set asset = entry.image.one() %}
 				<a href=" {{ entry.url }}"><img src="{{ asset.url ('bigThumb') }}"
-						class="opacity-100 shadow-xl hover:opacity-50 hover:transition-opacity duration-500   border border-gray-500 rounded"></a>
+						class="opacity-100 shadow-xl hover:opacity-70 hover:transition-opacity duration-500   bg-gray-100 border border-gray-600 rounded-sm"></a>
 				{% endfor %}
 			</div>
 			<p class="my-6 md:py-10 font-light uppercase  tracking-wider text-right">
 				<a href="/work/medium"
-					class="text-white rounded-sm bg-opacity-5 bg-gray-200 hover:bg-gray-900 py-2 px-3">All
+					class="text-gray-300 rounded-sm hover:text-gray-50 py-2 px-3">All
 					Paintings</a>
 			</p>
 		</section>
 		<section class="pt-10">
-			<h2 class="text-gray-500 text-xl md:text-2xl pt-10 mb-4 uppercase">Small Paintings</h2>
+			<h2 class="text-gray-50 text-xl md:text-2xl pt-10 mb-4 uppercase">Small Paintings</h2>
 			<div class="grid grid-cols-4 gap-8">
 				{# Create an entry query with the 'section' and 'limit' parameters #}
 				{% set myEntryQuery = craft.entries()
@@ -88,12 +88,12 @@
 				{# Display the entries #}
 				{% for entry in entries %}
 				{% set asset = entry.image.one() %}
-				<a href=" {{ entry.url }}"><img src="{{ asset.url ('bigThumb') }}"></a>
+				<a href=" {{ entry.url }}"><img src="{{ asset.url ('bigThumb') }}" class="opacity-100 shadow-xl hover:opacity-70 hover:transition-opacity duration-500   bg-gray-100 border border-gray-600 rounded-sm"></a>
 				{% endfor %}
 			</div>
 			<p class="my-6 md:py-10 font-light uppercase  tracking-wider text-right">
 				<a href="/work/small"
-					class="text-white rounded-sm bg-opacity-5 bg-gray-200 hover:bg-gray-900 py-2 px-3">All
+					class="text-gray-300 rounded-sm hover:text-gray-50 py-2 px-3">All
 					Paintings</a>
 			</p>
 		</section>
